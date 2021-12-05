@@ -43,13 +43,20 @@ ul, li {
 }
 
 table {
+    width: 100%;
     display: table;
     border-collapse: separate;
     box-sizing: border-box;
     text-indent: initial;
     border-spacing: 0px;
     border-color: gray;
-    padding: 2rem 0 3rem 0;
+    padding: 2rem 2rem 3rem 2rem;
+    cursor:default;
+}
+
+td:nth-child(1){
+    width:10rem;
+    font-weight: bold;
 }
 
 tr, td {
@@ -64,8 +71,6 @@ code {
     border-left: 5px solid dodgerblue;
     display: block;
 }
-
-/*tr:nth-child(even) {background-color: #f2f2f2;}*/
 
 tr:hover {background-color: #eee;}
 
@@ -272,6 +277,10 @@ footer .columna{
   overflow: hidden;
 }
 
+#contenido p {
+    text-align: justify;
+}
+
 #contenido article {
     background-color: white;
     padding: 2rem;
@@ -282,6 +291,14 @@ footer .columna{
     margin:1rem;
 }
 
+#contenido h1 {
+    margin: 4rem 0 0 0;
+}
+
+#contenido section:first-of-type h1 {
+    margin:0;
+}
+
 #contenido article h2 + p {
     margin: 2rem 0 0 0;
 }
@@ -289,6 +306,10 @@ footer .columna{
 #contenido article .top_articulo {
     width: calc(100% + 4rem);
     margin: -2rem -2rem 1rem -2rem;
+}
+
+#contenido article .galeria + p {
+    margin: 2rem 0 0 0;
 }
 
 #contenido article img {
@@ -306,11 +327,12 @@ footer .columna{
     margin: 2rem 0 0 0;
 }
 
-#contenido article .galeria img {
-
-    border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+#contenido .galeria {
+    margin: 0;
+    box-shadow: none;
 }
+
+
 
 .btn_descarga {
     display: block;
@@ -469,4 +491,67 @@ footer .columna{
     #contenido article {
         margin:1rem 0;
     }
+}
+
+
+/* =========================================================
+--------------  ESTILO PARA GALERIAS DE IMAGENES ------------
+============================================================ */
+
+.galeria {
+	position:relative;
+	width:100%;
+    margin: 2rem 0 0 0;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.galeria img:first-child {
+	position:relative;
+	width:100%;
+	left:0%;
+	top:0;
+}
+
+.galeria img {
+    margin: 0 !important;
+	position:absolute;
+    display: block;
+	width:100%;
+	left:-100%;
+	top:0;
+}
+
+.galeria .siguiente {
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	left:80%;
+	width:20%;
+	height:100%;
+	opacity:0;
+	background-color:black;
+	z-index:19;	
+}
+
+.galeria .siguiente:hover{
+	opacity:0.1;
+	cursor: pointer;
+}
+
+.galeria .previo {
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	left:0%;
+	width:20%;
+	height:100%;
+	opacity:0;
+	background-color:black;
+	z-index:19;	
+}
+
+.galeria .previo:hover {
+	opacity:0.1;
+	cursor: pointer;
 }

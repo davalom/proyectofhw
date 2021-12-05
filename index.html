@@ -13,6 +13,7 @@
         <title>Fundamentos de hardware</title>
         <!-- ================== LIBRERIAS JS ================== -->
         <script src="./scripts/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="./scripts/slider.js"></script>
         <script type="text/javascript" src="./scripts/funciones.js"></script>
         <!-- ================== SCRIPT PRINCIPAL ================== -->
         <script type="text/javascript">
@@ -29,13 +30,13 @@
 
             $(document).ready(function() { // Al finalizar la carga del DOM ...
                 // ============ CONFIGURACION INICIAL ===================
-                cargar_contenido ("ofimatica", "libreoffice");
+                cargar_contenido ("ofimatica", "msoffice");
                 marcar_boton($("#btn1_home"),1);
                 // =============== ESCUCHA DE EVENTOS ===================
                 hacer_scroll();
                 redimensionar_ventana();
                 click_en_navbar(menu);
-                //click_en_menu_lateral();
+                click_en_menu_lateral();
                 //test
             });
         </script>

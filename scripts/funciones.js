@@ -1,7 +1,6 @@
 const padding_ppal = 50;
 const min_scroll = 150;
 var offset_header = 0;
-var movil = false;
 
 // ================================================================
 // ------------------ FUNCIONES AUXILIARES ------------------------
@@ -40,6 +39,10 @@ function cargar_contenido(seccion, pagina) {
                 //$("#nav3.lateral").css("top", $("#contenido_pagina").offset().top);
                 posicionar_menu_lateral(offset_header);
             }
+        }
+        if ( $(".galeria").length ) {
+            console.log("hola")
+            galeria();
         }
         $("video").on("mouseover", function(event) {
             this.play();
@@ -208,19 +211,40 @@ function posicionar_menu_lateral(offset) {
 // menu superior
 function click_en_menu_lateral() {
     $("aside li a").click(function(event) {
-        let id = $(this).attr("href")
-        let pos_scroll = window.pageYOffset;
+        
+        let id = $(this).attr("href");
+        console.log(id);
         let pos_objetivo = $(id).offset().top;
+        let pos_scroll = window.pageYOffset;
+
         let altura_header = calcular_navbarh(2);
-        console.log("scroll:" + window.pageYOffset + " - posObjetivo" + $(id).offset().top);
-        if (pos_scroll > pos_objetivo || (pos_scroll < pos_objetivo && pos_objetivo <= (min_scroll + altura_header))) {
+
+
+
+        console.log(altura_header);
+        console.log("scroll:" + window.pageYOffset + " - posObjetivo" + pos_objetivo);
+
+
+
+
+
+
+        if (pos_scroll > pos_objetivo || ((pos_scroll < pos_objetivo) && (pos_objetivo <= (min_scroll + altura_header)))) {
             console.log("SUBIMOS");
-            $(".ancla").css('scroll-margin-top', (altura_header + padding_ppal)+ "px");
+            $([document.documentElement, document.body]).animate({
+                scrollTop: (parseInt($(id).offset().top, 10) - altura_header - 25 ) + "px"
+            }, 500);
         } else {
             console.log("BAJAMOS");
-            $(".ancla").css('scroll-margin-top', (calcular_navbarh(1) + padding_ppal)+ "px");
+            $([document.documentElement, document.body]).animate({
+                scrollTop: (parseInt($(id).offset().top, 10) - calcular_navbarh(1) - 25) + "px"
+            }, 500);
         }
+    
+   
     });
+
+    
 }
 
 
