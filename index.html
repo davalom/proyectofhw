@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- ================== ESTILOS ================== 
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=family=Crimson+Text|Work+Sans:400,700">
+        -->
+        <link rel="stylesheet" href="./estilos/claro.css"> 
+        <!-- ================== OTROS ================== -->
+        <title>Fundamentos de hardware</title>
+        <!-- ================== LIBRERIAS JS ================== -->
+        <script src="./Scripts/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="./Scripts/funciones.js"></script>
+        <!-- ================== SCRIPT PRINCIPAL ================== -->
+        <script type="text/javascript">
+            // Array con los nombres de los botones del menu superior para la funcion click_en_navbar()
+            const menu =[
+                ["home"],
+                ["ofimatica","msoffice","libreoffice","wpsoffice"],
+                ["compresor","7zip","winrar","peazip"],
+                ["recuperar", "testdisk", "recuva"],
+                ["antivirus","avast","malwarebytes","bitdefender"],
+                ["diseno","photoshop","aphoto","gimp","krita","blender","fusion","kicad"],
+                ["otros","mpchc","notepadpp","powertoys","vlc"]
+            ];
+
+            $(document).ready(function() { // Al finalizar la carga del DOM ...
+                // ============ CONFIGURACION INICIAL ===================
+                cargar_contenido ("home", "home");
+                marcar_boton($("#btn1_home"),1);
+                // =============== ESCUCHA DE EVENTOS ===================
+                hacer_scroll();
+                redimensionar_ventana();
+                click_en_navbar(menu);
+                //click_en_menu_lateral();
+            });
+        </script>
+    </head>
+    <body>
+        <header id="cabecera" class="cont_fijo">
+            <div id="titulo" class="cont_ancho">
+                <div class="cont_centrado">
+                    <img class="logo"src="./media/logos/main64.png" alt="logo">
+                    <h1>Instalación de <br> software</h1>
+                </div>
+            </div>
+            <div id="barra_navegacion">
+                <div id="nav1" class="cont_ancho">
+                    <div class="cont_centrado">
+                        <ul>
+                            <li id="btn1_home">Home</li>
+                            <li id="btn1_ofimatica">Ofimática</li>
+                            <li id="btn1_compresor">Compresores</li>
+                            <li id="btn1_recuperar">Recuperación</li>
+                            <li id="btn1_antivirus">Antivirus</li>
+                            <li id="btn1_diseno">Diseño</li>
+                            <li id="btn1_otros">Utilidades</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav2" class="cont_ancho">
+                    <div class="cont_centrado">
+                        <ul id="n2r_ofimatica" class="nav2_row">
+                            <li id="btn2_ofimatica">Ofimatica ></li>
+                            <li id="btn2_msoffice">MS Office</li>
+                            <li id="btn2_libreoffice">LibreOffice</li>
+                            <li id="btn2_wpsoffice">WPS Office</li>
+                        </ul>
+                        <ul id="n2r_compresor" class="nav2_row">
+                            <li id="btn2_compresor">Compresores ></li>
+                            <li id="btn2_7zip">7zip</li>
+                            <li id="btn2_winrar">WinRAR</li>
+                            <li id="btn2_peazip">PeaZIP</li>
+                        </ul>
+                        <ul id="n2r_recuperar" class="nav2_row">
+                            <li id="btn2_recuperar">Recuperación ></li>
+                            <li id="btn2_testdisk">TestDisk</li>
+                            <li id="btn2_recuva">Recuva</li>
+                        </ul>
+                        <ul id="n2r_antivirus" class="nav2_row">
+                            <li id="btn2_antivirus">Antivirus ></li>
+                            <li id="btn2_avast">Avast!</li>
+                            <li id="btn2_bitdefender">BitDefender</li>
+                            <li id="btn2_malwarebytes">MalwareBytes</li>
+                        </ul>
+                        <ul id="n2r_diseno" class="nav2_row">
+                            <li id="btn2_diseno">Diseño ></li>
+                            <li id="btn2_photoshop">Adobe Photoshop</li>
+                            <li id="btn2_aphoto">Affinity Photo</li>
+                            <li id="btn2_krita">Krita</li>
+                            <li id="btn2_gimp">Gimp</li>
+                            <li id="btn2_blender">Blender</li>
+                            <li id="btn2_fusion">Fusion 360</li>
+                            <li id="btn2_kicad">KiCAD</li>
+                        </ul>
+                        <ul id="n2r_otros" class="nav2_row">
+                            <li id="btn2_otros">Utilidades ></li>
+                            <li id="btn2_mpchc">MPC-HC</li>
+                            <li id="btn2_vlc">VLC</li>
+                            <li id="btn2_powertoys">Powertoys</li>
+                            <li id="btn2_notepadpp">Notepad++</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="cont_dinamico">
+            ...
+        </div>
+        <footer>
+            <div class="cont_ancho">
+                <div class="cont_centrado">
+                    <div class="columna">
+                        ...
+                    </div>
+                    <div class="columna">
+                        Esto es el pie de página
+                    </div>
+                    <div class="columna">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
