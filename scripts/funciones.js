@@ -41,6 +41,11 @@ function cargar_contenido(seccion, pagina) {
                 posicionar_menu_lateral(offset_header);
             }
         }
+        $("video").on("mouseover", function(event) {
+            this.play();
+        }).on('mouseout', function(event) {
+            this.pause();
+        });
     });
 }
 
@@ -217,10 +222,6 @@ function click_en_menu_lateral() {
         }
     });
 }
-
-
-
-
 
 
 
