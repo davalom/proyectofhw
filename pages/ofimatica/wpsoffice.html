@@ -4,11 +4,11 @@
             <aside id="nav3" class="lateral">
                 <ul>
                     <li class="n1"><a href="#instalar_intro">Introducción</a></li>
+                    <li class="n1"><a href="#instalar_gui">Interfaz</li>
                 </ul>
                 <ul>
                     <li class="n1 raiz"><a href="#instalar_windows">Windows</a></li>
                     <li class="n2"><a href="#win_exe">Ejecutable</a></li>
-                    <li class="n2"><a href="#win_portable">Portable</a></li>
                 </ul>
                 <ul>
                     <li class="n1 raiz"><a href="#instalar_ubuntu">Ubuntu</a></li>
@@ -18,58 +18,82 @@
         </div>
         <div id="contenido" class="col-R">
             <section id="instalar_intro" class="grid-item ancla">
-                <h1>WPS Office</h1>
+                <h1>Microsoft Office 365</h1>
                 <article>
                     <img src="./media/img/ofimatica/wpsoffice/wpsoffice.png" class="top_articulo" alt="office"/>
-                    <p>Microsoft Office 365 es una suite ofimática de suscripción anual creada por Microsoft. En su edición básica incluye los siguientes programas con licencia para 5 usuarios:</p>
+                    <p>WPS Office es una suite ofimática disponible para los sistemas operativos Windows, Linux, Android e iOS creada por la empresa China Kingsoft Office. La versión básica es gratuita, aunque se trata de software propietario. Su interfaz es similar a la de Microsoft Office y es compatible con los formatos propietarios de éste.</p>
                     <table>
                         <tr>
-                            <td>Word</td>
+                            <td>Documento</td>
                             <td>Procesador de texto</td>
                         </tr>
                         <tr>
-                            <td>Excel</td>
+                            <td>Spreadsheets</td>
                             <td>Hoja de cálculo</td>
                         </tr>
                         <tr>
-                            <td>PowerPoint</td>
-                            <td>presentaciones</td>
+                            <td>Presentación</td>
+                            <td>Presentaciones</td>
                         </tr>
                         <tr>
-                            <td>Publisher</td>
-                            <td>Maquetación</td>
-                        </tr>
-                        <tr>
-                            <td>Access</td>
-                            <td>Gestor de bases de datos</td>
-                        </tr>
-                        <tr>
-                            <td>Outlook</td>
-                            <td>Cliente de correo electrónico</td>
-                        </tr>
-                        <tr>
-                            <td>One Note</td>
-                            <td>Programa de notas</td>
+                            <td>PDF</td>
+                            <td>Editor de PDF</td>
                         </tr>
                     </table>
+                    <p>Se puede descargar desde la web oficial del desarrollador de forma gratuita.</p>
+                    <a class="btn_descarga" href="https://www.wps.com/">WPS.com</a>
+                </article>
+            </section>
+            <section id="instalar_gui" class="ancla">
+                <h1>Interfaz Gráfica</h1>
+                <article>
+                    <div class="galeria top_articulo">
+                        <img src="./media/img/ofimatica/wpsoffice/galeria/01.png" alt="documento">
+                        <img src="./media/img/ofimatica/wpsoffice/galeria/02.png" alt="spreadsheet">
+                        <img src="./media/img/ofimatica/wpsoffice/galeria/03.png" alt="presentacion">
+                        <img src="./media/img/ofimatica/wpsoffice/galeria/04.png" alt="pdf">
+                        <img src="./media/img/ofimatica/wpsoffice/galeria/00.png" alt="hub">
+                        <div class="siguiente">
+                        </div>
+                        <div class="previo">
+                        </div>
+                    </div>
+                    <p>...</p>
                 </article>
             </section>
             <section id="instalar_windows" class="ancla">
                 <h1>Windows</h1>
                 <article id="win_exe" class="ancla">
                     <h2>Ejecutable</h2>
-                    <p>hola mundo</p>
+                    <p>Instalar WPS Office en Windows no supone ninguna dificultad. Simplemente lo descargamos desde la página del desarrollador y lo instalamos ejecutando el fichero. Se nos pedirá que aceptemos los términos de uso y le damos a instalar. El único inconveniente que puede causar es que por defecto crea dos iconos en el escritorio y se ancla a la barra de tareas sin pedir permiso, aunque tiene fácil solución.</p>
+                    <video controls loop muted>
+                        <source src="./media/video/ofimatica/wpsoffice/windows_exe.mp4" type="video/mp4">
+                        Video no soportado en éste navegador.
+                    </video>
                 </article>
                 <article id="win_tienda" class="ancla">
                     <h2>Tienda</h2>
-                    <p>hola mundo</p>
+                    <p>Una forma todavía más fácil es instalarlo desde la tienda de Windows. Para ello simplemente abrimos la tienda y buscamos el programa. Una vez en la ficha de WPS Office, le damos al botón que pone «instalar».</p>
+                    <video controls loop muted>
+                        <source src="./media/video/ofimatica/wpsoffice/windows_tienda.mp4" type="video/mp4">
+                        Video no soportado en éste navegador.
+                    </video>
                 </article>
             </section>
             <section id="instalar_ubuntu" class="ancla">
-                <h1>Ubuntu</h1>
+                <h1>Navegador</h1>
                 <article id="ubu_cmd" class="ancla">
-                    <h2>Terminal</h2>
-                    <p>hola mundo</p>
+                    <h2>Version web</h2>
+                    <p>En sistemas Linux es recomendable actualizar las listas del repositorio antes de instalar nuevo software. El comando para hacerlo es:</p>
+                    <code>apt update</code>
+                    <p>Podemos descargar el paquete .deb desde la web del desarrollador o pasarle el enlace al siguiente comando para que los descargue desde la terminal:</p>
+                    <code>wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/ linux/10702/wps-office_11.1.0.10702.XA_amd64.deb -P ~/Downloads</code>
+                    <p>Por último, instalamos el software que acabamos de descargar con:</p>
+                    <code>sudo apt install ~/Downloads/wps-office_11.1.0.10702.XA_ amd64.deb</code>
+                    <video controls loop muted>
+                        <source src="./media/video/ofimatica/wpsoffice/ubuntu_cmd.mp4" type="video/mp4">
+                        Video no soportado en éste navegador.
+                    </video>
                 </article>
             </section>
         </div>

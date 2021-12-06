@@ -1,3 +1,6 @@
+// Función de slider adaptada a partir del código publicado en 
+// https://medium.com/@AmyScript/simple-image-slider-using-html5-css3-and-jquery-fc7b4f23f4b6
+
 function galeria() {
 	var i= 0;
 	$('.galeria .siguiente').on("click", function(){

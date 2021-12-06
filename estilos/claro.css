@@ -42,38 +42,6 @@ ul, li {
     padding: 0;
 }
 
-table {
-    width: 100%;
-    display: table;
-    border-collapse: separate;
-    box-sizing: border-box;
-    text-indent: initial;
-    border-spacing: 0px;
-    border-color: gray;
-    padding: 2rem 2rem 3rem 2rem;
-    cursor:default;
-}
-
-td:nth-child(1){
-    width:10rem;
-    font-weight: bold;
-}
-
-tr, td {
-    padding: 0.3rem;
-    text-align: left;
-    border-bottom: 1px solid #eee;
-}
-
-code {
-    margin: 1rem 0 1rem 3rem;
-    padding-left: 1rem;
-    border-left: 5px solid dodgerblue;
-    display: block;
-}
-
-tr:hover {background-color: #eee;}
-
 .cont_centrado{
   display: flex;
   max-width: 80rem;
@@ -215,7 +183,7 @@ footer .columna{
 /* =========================================================
 ::::::::: ESTILOS DE PAGINA CARGADA DINAMICAMENTE ::::::::::
 ------------------------------------------------------------
-++++++++++++++ PAGINA TIPO B (CON MENU LAT) ++++++++++++++++
+++++++++++++++ PAGINA TIPO A (CON MENU LAT) ++++++++++++++++
 ============================================================ */
 
 #cont_dinamico  {
@@ -269,7 +237,7 @@ footer .columna{
 }
 
 /* =========================================================
----------------------- CONTENIDO PPAL ----------------------
+-------------------- CONTENIDO (TIPO A) --------------------
 ============================================================ */
 
 #contenido {
@@ -327,12 +295,44 @@ footer .columna{
     margin: 2rem 0 0 0;
 }
 
+#contenido table {
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 0px;
+    border-color: gray;
+    padding: 2rem 2rem 3rem 2rem;
+    cursor:default;
+}
+
+#contenido td:nth-child(1) {
+    width:10rem;
+    font-weight: bold;
+}
+
+#contenido tr, #contenido td {
+    padding: 0.3rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+#contenido tr:hover {
+    background-color: #eee;
+}
+
+#contenido code {
+    margin: 1rem 0 1rem 3rem;
+    padding-left: 1rem;
+    border-left: 5px solid dodgerblue;
+    display: block;
+}
+
 #contenido .galeria {
     margin: 0;
     box-shadow: none;
 }
-
-
 
 .btn_descarga {
     display: block;
@@ -355,18 +355,177 @@ footer .columna{
 
 
 
+/* =========================================================
+::::::::: ESTILOS DE PAGINA CARGADA DINAMICAMENTE ::::::::::
+------------------------------------------------------------
+++++++++++++++ PAGINA TIPO B (SIN MENU LAT) ++++++++++++++++
+============================================================ */
 
 
-#test1 {
-  background: url(../media/img/ofimatica/header.jpg);
-  background-size: 100%;
-  background-attachment: fixed;
-  height: 200px;
-  
+#header_b {
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% !important;
+    height: 15rem;
 }
 
+#contenido_b .section_divider {
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% !important;
+    height: 30rem;
+}
+
+#contenido_b section {
+    margin-bottom: 5rem;
+}
+
+#contenido_b h1 {
+    margin: 2rem 0 2rem 0;
+}
+
+#contenido_b section h1:nth-child(1) {
+    margin: 0 0 2rem 0;
+}
+
+#contenido_b p {
+    text-align: justify;
+}
+
+#contenido_b table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 0px;
+    border-color: gray;
+    margin: 2rem 2rem 3rem 2rem;
+    width: calc(100% - 4rem);
+    cursor:default;
+    table-layout:fixed; 
+}
+
+#contenido_b tr, #contenido_b td {
+    padding: 0.3rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    overflow:hidden;white-space:nowrap;
+}
+
+#contenido_b td:nth-child(1) {
+    text-align: left;
+    width:30%;
+    font-weight: bold;
+    overflow:hidden;white-space:nowrap;
+}
+
+#contenido_b th {
+    padding: 0.3rem;
+    height: 3rem;
+    background-color: dodgerblue;
+    color: #fff
+}
+
+#contenido_b th:nth-child(1) {
+    text-align: left;
+}
+
+#contenido_b table .tsec {
+    border-bottom: 1px solid #d6d6d6;
+    background-color: #e6e6e6;
+}
+
+#contenido_b table .tsn {
+    
+}
+
+#contenido_b tr:hover {
+    background-color: #eee;
+}
+
+
+
+
+
+
+
 /* =========================================================
---------------------- ESTILOS RESPONSIVE--------------------
+------------------------------------------------------------
+::::::::::::::: ESTILOS PARA GALERIA DE IMGS :::::::::::::::
+------------------------------------------------------------
+============================================================ */
+
+.galeria {
+	position:relative;
+	width:100%;
+    margin: 2rem 0 0 0;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.galeria img:first-child {
+	position:relative;
+	width:100%;
+	left:0%;
+	top:0;
+}
+
+.galeria img {
+    margin: 0 !important;
+	position:absolute;
+    display: block;
+	width:100%;
+	left:-100%;
+	top:0;
+}
+
+.galeria .siguiente {
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	left:60%;
+	width:40%;
+	height:100%;
+	opacity:20%;
+	z-index:19;	
+    background-image: url(../media/icons/arrow_r.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.galeria .siguiente:hover{
+	opacity:100%;
+	cursor: pointer;
+}
+
+.galeria .previo {
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	left:0%;
+	width:40%;
+	height:100%;
+	opacity:20%;
+	z-index:19;
+    background-image: url(../media/icons/arrow_l.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
+
+.galeria .previo:hover {
+	opacity:100%;
+	cursor: pointer;
+}
+
+
+/* =========================================================
+::::::::::::::: ESTILOS DE PAGINA RESPONSIVE :::::::::::::::
+------------------------------------------------------------
++++++++++++++++ COLUMNAS PARA PAGINA TIPO A ++++++++++++++++
 ============================================================ */
 
 
@@ -379,10 +538,6 @@ footer .columna{
     width: 75%;
     max-width: calc(100% - 250px);
 }
-
-
-
-
 
 .row::after {
     content: "";
@@ -414,7 +569,6 @@ footer .columna{
 }
 
 @media only screen and (max-width: 1000px) {
-
     body {
         background-color: #FCFCFC;
     }    
@@ -439,14 +593,16 @@ footer .columna{
         padding: 3rem 5%;
     }
     
-
-
     #cont_dinamico .cont_centrado {
         padding: 0px;
     }
 
     #contenido article {
         margin:1rem 0;
+    }
+
+    #contenido_b .cont_centrado{
+        padding:1rem 1rem;
     }
 
     #nav3.lateral {
@@ -461,7 +617,6 @@ footer .columna{
 ============================================================ */
 
 @media only print {
-
     header, footer, .col-L {
         display: none;
     }
@@ -491,67 +646,4 @@ footer .columna{
     #contenido article {
         margin:1rem 0;
     }
-}
-
-
-/* =========================================================
---------------  ESTILO PARA GALERIAS DE IMAGENES ------------
-============================================================ */
-
-.galeria {
-	position:relative;
-	width:100%;
-    margin: 2rem 0 0 0;
-    overflow: hidden;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-.galeria img:first-child {
-	position:relative;
-	width:100%;
-	left:0%;
-	top:0;
-}
-
-.galeria img {
-    margin: 0 !important;
-	position:absolute;
-    display: block;
-	width:100%;
-	left:-100%;
-	top:0;
-}
-
-.galeria .siguiente {
-	position:absolute;
-	top:50%;
-	transform:translateY(-50%);
-	left:80%;
-	width:20%;
-	height:100%;
-	opacity:0;
-	background-color:black;
-	z-index:19;	
-}
-
-.galeria .siguiente:hover{
-	opacity:0.1;
-	cursor: pointer;
-}
-
-.galeria .previo {
-	position:absolute;
-	top:50%;
-	transform:translateY(-50%);
-	left:0%;
-	width:20%;
-	height:100%;
-	opacity:0;
-	background-color:black;
-	z-index:19;	
-}
-
-.galeria .previo:hover {
-	opacity:0.1;
-	cursor: pointer;
 }
