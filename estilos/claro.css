@@ -343,7 +343,7 @@ footer .columna{
 }
 
 #contenido code {
-    margin: 1rem 0 1rem 3rem;
+    margin: 0.5rem 0 1rem 3rem;
     padding-left: 1rem;
     border-left: 5px solid dodgerblue;
     display: block;
