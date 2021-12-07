@@ -1,0 +1,112 @@
+<div class="cont_ancho">
+    <div class="cont_centrado row">
+        <div class="col-L">
+            <aside id="nav3" class="lateral">
+                <ul>
+                    <li class="n1"><a href="#instalar_intro">Introducción</a></li>
+                    <li class="n1"><a href="#instalar_gui">Interfaz</li>
+                </ul>
+                <ul>
+                    <li class="n1 raiz"><a href="#instalar_windows">Windows</a></li>
+                    <li class="n2"><a href="#win_portable">Portable</a></li>
+                </ul>
+                <ul>
+                    <li class="n1 raiz"><a href="#instalar_ubuntu">Ubuntu</a></li>
+                    <li class="n2"><a href="#ubu_cmd">Terminal</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div id="contenido" class="col-R">
+            <section id="instalar_intro" class="grid-item ancla">
+                <h1>Test Disk</h1>
+                <article>
+                    <img src="./media/img/recuperar/testdisk/testdisk.png" class="top_articulo" alt="testdisk"/>
+                    <p>Test Disk es un potente programa de recuperación de datos para usuarios avanzados. Es capaz de recuperar particiones borradas o corruptas y los ficheros que contenian. 
+                    </p>
+                    <p>Es fácil de utilizar, aunque hay que tener cuidado al usarla ya que si se escoge la opción erronea se puede corromper toda la estructura del disco. Personalmente, me ha servido para recuperar la información de dos discos duros con particiones irreconocibles por el SO.</p>
+                    <p>Tiene licencia GPLv2+ (Open Source) y puede recuperar particiones para los siguientes sistemas de archivos:</p>
+                    <ul>
+                        <li>BeFS</li>
+                        <li>BSD disklabel</li>
+                        <li>CramFS</li>
+                        <li>FAT12, FAT16 y FAT32</li>
+                        <li>exFAT</li>
+                        <li>HFS y HFS+</li>
+                        <li>JFS</li>
+                        <li>ext2, ext3 y ext4</li>
+                        <li>Linux Raid</li>
+                        <li>Linux Swap</li>
+                        <li>LVM y LVM2</li>
+                        <li>Mapa de particiones Mac</li>
+                        <li>NSS</li>
+                        <li>NTFS</li>
+                        <li>ReiserFS 3.5, 3.6 y 4</li>
+                        <li>i386 disklabel</li>
+                        <li>UFS y UFS2</li>
+                        <li>XFS</li>
+                    </ul>
+                    <p>Se puede descargar desde la web del desarrollador:</p>
+                    <a class="btn_descarga" href="https://www.cgsecurity.org/wiki/TestDisk_ES">TestDisk</a>
+                </article>
+            </section>
+            <section id="instalar_gui" class="ancla">
+                <h1>Interfaz Gráfica</h1>
+                <article>
+                    <div class="galeria top_articulo">
+                        <img src="./media/img/recuperar/testdisk/galeria/01.png" alt="01">
+                        <img src="./media/img/recuperar/testdisk/galeria/02.png" alt="02">
+                        <img src="./media/img/recuperar/testdisk/galeria/03.png" alt="03">
+                        <img src="./media/img/recuperar/testdisk/galeria/04.png" alt="04">
+                        <img src="./media/img/recuperar/testdisk/galeria/05.png" alt="05">
+                        <img src="./media/img/recuperar/testdisk/galeria/06.png" alt="06">
+                        <img src="./media/img/recuperar/testdisk/galeria/07.png" alt="07">
+                        <img src="./media/img/recuperar/testdisk/galeria/08.png" alt="08">
+                        <img src="./media/img/recuperar/testdisk/galeria/09.png" alt="09">
+                        <img src="./media/img/recuperar/testdisk/galeria/10.png" alt="10">
+                        <div class="siguiente">
+                        </div>
+                        <div class="previo">
+                        </div>
+                    </div>
+                    <p>Tiene una interfaz de línea de comandos, lo que puede intimidar a usuarios que no estén acostumbrados a utilizar este tipo de programas. Se maneja principalmente con las teclas de dirección y las letras que se indican por pantalla.</p>
+                    <p>A continuación se muestra el proceso de recuperación de un archivo contenido en una partión que ha sido borrada:</p>
+                    <video controls loop muted>
+                        <source src="./media/video/recuperar/testdisk/testdisk_uso.mp4" type="video/mp4">
+                        Video no soportado en éste navegador.
+                    </video>
+                </article>
+            </section>
+            <section id="instalar_windows" class="ancla">
+                <h1>Windows</h1>
+                <article id="win_portable" class="ancla">
+                    <h2>Portable</h2>
+                    <p>Test Disk se distruibuye en forma portable. Esto quiere decir que se puede usar sin necesidad de instalarlo. Si queremos tenerlo en el equipo como si fuera una versión instlada simplemente tenemos que descomprimir los ficheros en un lugar de nuestra elección (en mi caso he creado una carpeta «programas portables» en C:) y guardar un acceso directo al ejecutable en la siguiente ruta: </p>
+                    <code>C:\Users\[$USUARIO]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs</code>
+                    <p>De esta forma Windows lo añade ai índice del menú de inicio y permitiendo buscarlo desde allí.</p>
+                    <video controls loop muted>
+                        <source src="./media/video/recuperar/testdisk/windows_portable.mp4" type="video/mp4">
+                        Video no soportado en éste navegador.
+                    </video>
+                </article>
+            </section>
+            <section id="instalar_ubuntu" class="ancla">
+                <h1>Ubuntu</h1>
+                <article id="ubu_cmd" class="ancla">
+                    <h2>Terminal</h2>
+                    <p>La instalación en Ubuntu es muy sencila. Primero es recomendable actualizar las listas del repositorio:</p>
+                    <code>sudo apt update</code>
+                    <p>A continuación lo instalamos con el siguiente comando:</p>
+                    <code>sudo apt install testdisk</code>
+                    <p>Por último podemos comprobar que se ha instalado correctamente:</p>
+                    <code>sudo dpkg -l testdisk</code>
+                    <p>Para ejecutar el programa simplemente escribimos su nombre precedido por sudo:</p>
+                    <code>sudo testdisk</code>
+                    <video controls loop muted>
+                        <source src="./media/video/recuperar/testdisk/ubuntu_cmd.mp4" type="video/mp4">
+                        Video no soportado en éste navegador.
+                    </video>
+                </article>
+            </section>
+        </div>
+    </div>
+</div>

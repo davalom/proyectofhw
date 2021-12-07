@@ -21,9 +21,9 @@
             const menu =[
                 ["home"],
                 ["ofimatica","msoffice","libreoffice","wpsoffice"],
-                ["antivirus","avast","eset","bitdefender","malwarebytes"],
                 ["recuperar", "testdisk", "recuva"],
-                ["portable"],
+                ["antivirus","avast","eset","bitdefender","malwarebytes"],
+                ["portable", "krita_p", "blender_p"],
                 ["compresor","7zip","winrar","peazip"],
                 ["diseno","photoshop","aphoto","gimp","krita","blender","fusion","kicad"],
                 ["otros","mpchc","notepadpp","powertoys","vlc"]
@@ -31,7 +31,7 @@
 
             $(document).ready(function() { // Al finalizar la carga del DOM ...
                 // ============ CONFIGURACION INICIAL ===================
-                cargar_contenido ("home", "home");
+                cargar_contenido ("recuperar", "testdisk");
                 marcar_boton($("#btn1_home"),1);
                 // =============== ESCUCHA DE EVENTOS ===================
                 hacer_scroll();
@@ -56,12 +56,14 @@
                         <ul>
                             <li id="btn1_home">Home</li>
                             <li id="btn1_ofimatica">Ofimática</li>
-                            <li id="btn1_antivirus">Antivirus</li>
                             <li id="btn1_recuperar">Recuperación</li>
+                            <li id="btn1_antivirus">Antivirus</li>
                             <li id="btn1_portable">Portables</li>
+                            <!-- SI DA TIEMPO
                             <li id="btn1_compresor">Compresores</li>
                             <li id="btn1_diseno">Diseño</li>
                             <li id="btn1_otros">Utilidades</li>
+                            -->
                         </ul>
                     </div>
                 </div>
@@ -73,18 +75,26 @@
                             <li id="btn2_libreoffice">LibreOffice</li>
                             <li id="btn2_wpsoffice">WPS Office</li>
                         </ul>
-                        <ul id="n2r_antivirus" class="nav2_row">
-                            <li id="btn2_antivirus">Antivirus ></li>
-                            <li id="btn2_avast">Avast!</li>
-                            <li id="btn2_eset">ESET</li>
-                            <li id="btn2_bitdefender">BitDefender</li>
-                            <li id="btn2_malwarebytes">MalwareBytes</li>
-                        </ul>
                         <ul id="n2r_recuperar" class="nav2_row">
                             <li id="btn2_recuperar">Recuperación ></li>
                             <li id="btn2_testdisk">TestDisk</li>
                             <li id="btn2_recuva">Recuva</li>
                         </ul>
+                        <ul id="n2r_antivirus" class="nav2_row">
+                            <li id="btn2_antivirus">Antivirus ></li>
+                            <li id="btn2_avast">Avast!</li>
+                            <li id="btn2_eset">ESET</li>
+                            <!-- SI DA TIEMPO
+                            <li id="btn2_bitdefender">BitDefender</li>
+                            <li id="btn2_malwarebytes">MalwareBytes</li>
+                            -->
+                        </ul>
+                        <ul id="n2r_portable" class="nav2_row">
+                            <li id="btn2_portable">Portables ></li>
+                            <li id="btn2_krita_p">Krita</li>
+                            <li id="btn2_blender_p">Blender</li>
+                        </ul>
+                        <!-- SI DA TIEMPO
                         <ul id="n2r_compresor" class="nav2_row">
                             <li id="btn2_compresor">Compresores ></li>
                             <li id="btn2_7zip">7zip</li>
@@ -107,7 +117,8 @@
                             <li id="btn2_vlc">VLC</li>
                             <li id="btn2_powertoys">Powertoys</li>
                             <li id="btn2_notepadpp">Notepad++</li>
-                        </ul> 
+                        </ul>
+                        -->
                     </div>
                 </div>
             </div>
