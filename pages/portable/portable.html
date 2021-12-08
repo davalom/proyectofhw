@@ -4,99 +4,39 @@
         <section>
             <article>
                 <h1>Programas con versión portable</h1>
-                <p>
-                    Elit sagittis in congue. Rhoncus sapien nec sit libero ut sagittis nascetur lacinia magna fames parturient vestibulum! Nullam sem sagittis, curae; dui eleifend habitant inceptos montes non feugiat habitasse. Tempus sed fermentum sagittis integer tempor suscipit ultrices nostra ultricies nostra volutpat potenti? Dolor fames molestie ligula fusce elementum? Ligula erat magna dui. Aliquet justo ornare, erat nunc.
-                    </p>
-                    <p>
-                    Integer ultricies accumsan in aptent vehicula tellus sollicitudin massa natoque amet. Semper; fringilla neque ridiculus venenatis quisque. Phasellus quam pulvinar felis erat praesent platea, est ullamcorper. Inceptos ornare non tortor euismod congue netus. Pulvinar a velit, elit nisi curabitur? Nascetur vestibulum ultricies orci venenatis metus. Etiam rhoncus aptent montes adipiscing nullam magnis, natoque ad vel blandit sit. Lacus cubilia taciti vulputate interdum fringilla velit sem. Mauris eleifend pellentesque imperdiet dolor, in parturient! Taciti sociosqu condimentum integer facilisis fames rhoncus hac posuere ridiculus et!
-                    </p>
-                <h1>Comparativa</h1>
-                <h2>Características generales</h2>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Programas</th>
-                            <th>Recuva</th>
-                            <th>TestDisk</th>
-                        </tr>
-                        <tr>
-                            <td colspan="3" class="tsec">Aplicaciones</td>
-                        </tr>
-                        <tr>
-                            <td>Editor de texto</td>
-                            <td>Writer</td>
-                            <td>Documentos</td>
-                        </tr>
-                        <tr>
-                            <td>Hojas de C&aacute;lculo</td>
-                            <td>Calc</td>
-                            <td>SpreadSheet</td>
-                        </tr>
-                        <tr>
-                            <td>Presentaciones</td>
-                            <td>Impress</td>
-                            <td>Presentaciones</td
-                        </tr>
-                        <tr>
-                            <td>Maquetaci&oacute;n</td>
-                            <td class="tsn">-</td>
-                            <td class="tsn">-</td>
-                        </tr>
-                        <tr>
-                            <td>Bases de datos</td>
-                            <td>Base</td>
-                            <td class="tsn">-</td>
-                        </tr>
-                        <tr>
-                            <td>Correo</td>
-                            <td class="tsn">-</td>
-                            <td class="tsn">-</td>
-                        </tr>
-                        <tr>
-                            <td>Notas</td>
-                            <td class="tsn">-</td>
-                            <td class="tsn">-</td>
-                        </tr>
-                        <tr>
-                            <td>Diagramas</td>
-                            <td>Draw</td>
-                            <td class="tsn">-</td>
-                        </tr>
-                        <tr>
-                            <td>Notación Matemática</td>
-                            <td>Math</td>
-                            <td class="tsn">-</td>
-                        </tr>
-                        <tr>
-                            <td>Editor PDF</td>
-                            <td class="tsn">-</td>
-                            <td>PDF</td>
-                        </tr>
-                        <tr>
-                            <td colspan="3"  class="tsec">Sistemas soportados</td>
-                        </tr>
-                        <tr>
-                            <td>Windows</td>
-                            <td class="tsn">&#x25cf;</td>
-                            <td class="tsn">&#x25cf;</td>
-                        </tr>
-                        <tr>
-                            <td>OSX</td>
-                            <td class="tsn">&#x25cf;</td>
-                            <td class="tsn">&#x25cf;</td>
-                        </tr>
-                        <tr>
-                            <td>Linux</td>
-                            <td class="tsn">&#x25cf;</td>
-                            <td class="tsn">&#x25cf;</td>
-                        </tr>
-                        <tr>
-                            <td>Versión Web</td>
-                            <td class="tsn">-</td>
-                            <td class="tsn">&#x25cf;</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h2>Versión Instalable</h2>
+                <p>Cuando el usuario ejecuta el instalador de un software, éste realiza automáticamente una serie de acciones sobre el sistema, como pueden ser:</p>
+                <ul>
+                    <li>Crear una carpeta en «archivos de programa» donde se copiarán los ficheros del programa.</li>
+                    <li>Escribir nuevas claves en el registro de Windows o se modifican algunas de las existentes.</li>
+                    <li>Crear una carpeta en %appdata% donde se guardarán las configuraciones de usuario.</li>
+                    <li>Crear accesos directos en menú de inicio y escritorio.</li>
+                    <li>Copiar librerías DLL necesarias en C:\Windows\System32</li>
+                </ul>
+                <p>Como se puede ver, al instalar un programa se crean archivos en muchos lugares del sistema. Esto hace que, a la hora de desinstalar dicho programa, resulte difícil eliminar todo el rastro que ha dejado. Las versiones portables solucionan en gran medida este problema.</p>
+                <h2>Versión portable</h2>
+                <p>Cuando decimos que un software es portable, nos referimos a que para utilizarlo no es necesario pasar por un proceso de instalación.</p>
+                <p>Se le da el nombre de portable porque se puede copiar el directorio donde se encuentra almacenado y moverlo a otro ordenador sin que por ello deje de funcionar. Esto es posible ya que el ejecutable y todos los ficheros necesarios para su funcionamiento están dentro del mismo directorio, en lugar de estar desperdigados por el sistema operativo como ocurre con una versión instalable. </p>
+                <p>El software portable funciona de dos formas principales:</p>
+                <ul>
+                    <li>El ejecutable o su directorio contienen todas las librerías necesarias para su funcionamiento.</li>
+                    <li>El software portable crea una máquina virtual donde se ejecutará mientras el usuario haga uso del programa. En cuanto el usuario cierra el programa la máquina virtual se destruye. Esta técnica es usada principalmente en software convertido a portable que originalmente necesitaba hacer uso del registro de Windows.</li>
+                </ul>
+                <p>Entre las ventajas del software portable se encuentra el poder ser eliminado de un sistema sin dejar rastro, a diferencia de las versiones instalables, que suelen dejar ficheros y entradas en el registro. Esto depende mucho del programa, pero es cierto en la mayoría de los casos.</p>
+                <p>Una desventaja del software portable es que hay que configurar manualmente ciertas integraciones con el sistema operativo si se desea hacer uso de ellas como:</p>
+                <ul>
+                    <li>Accesos directos al menú de inicio.</li>
+                    <li>Asociaciones de tipos de extensión (la primera vez que se abre ese tipo de fichero).</li>
+                    <li>La adición de entradas al menú contextual a través de la configuración del programa.</li>
+                </ul>
+                <p>En general es preferible usar un programa en su versión portable si es de pequeño tamaño y no nos importa crear manualmente las integraciones que necesitemos. Si se trata de software grande y que depende de muchas librerías externas, es preferible usar la versión instalable ya que su versión portable, al tener que almacenar duplicados de las librerías necesarias, puede llegar a ocupar mucho espacio.</p>
+                <p>En cuanto al funcionamiento del programa de cara al usuario (una vez configurado correctamente), se podría decir que no existe diferencia de uso y funcionalidad entre las versiones portables e instalables de un programa.</p>
+                <h2>Versión portable (Linux)</h2>
+                <p>En sistemas Linux es menos común el uso de versiones portables. Esto no quiere decir que no existan formas de distribuirlas. Se han probado dos: la que usa Blender y la que usa Krita.</p>
+                <ul>
+                    <li>En el caso de Blender se utiliza un método similar al de Windows. Se empaqueta el programa en un fichero comprimido para que el usuario lo descomprima donde desee. Una vez descomprimido se puede ejecutar sin problema.</li>
+                    <li>Krita utiliza una forma de distribución llamada «AppImage» en el que todo el programa se empaqueta en un único fichero. Una vez descargado, le damos permiso de ejecución mediante el comando chmod y estaría listo para utilizarlo haciendo doble clic sobre él.</li>
+                </ul>
             </article>
         </section>
     </div>

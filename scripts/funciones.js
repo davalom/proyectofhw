@@ -211,41 +211,42 @@ function posicionar_menu_lateral(offset) {
 // menu superior
 function click_en_menu_lateral() {
     $("aside li a").click(function(event) {
-        
         let id = $(this).attr("href");
         console.log(id);
         let pos_objetivo = $(id).offset().top;
         let pos_scroll = window.pageYOffset;
-
         let altura_header = calcular_navbarh(2);
-
-
-
-        console.log(altura_header);
-        console.log("scroll:" + window.pageYOffset + " - posObjetivo" + pos_objetivo);
-
-
-
-
-
-
+        //console.log(altura_header);
+        //console.log("scroll:" + window.pageYOffset + " - posObjetivo" + pos_objetivo);
         if (pos_scroll > pos_objetivo || ((pos_scroll < pos_objetivo) && (pos_objetivo <= (min_scroll + altura_header)))) {
-            console.log("SUBIMOS");
+            //console.log("SUBIMOS");
             $([document.documentElement, document.body]).animate({
                 scrollTop: (parseInt($(id).offset().top, 10) - altura_header - 25 ) + "px"
             }, 500);
         } else {
-            console.log("BAJAMOS");
+            //console.log("BAJAMOS");
             $([document.documentElement, document.body]).animate({
                 scrollTop: (parseInt($(id).offset().top, 10) - calcular_navbarh(1) - 25) + "px"
             }, 500);
         }
-    
-   
-    });
-
-    
+    }); 
 }
 
+// ================================================================
+// ---------------------- CAMBIAR TEMA CSS ------------------------
+// ================================================================
 
+function cambiar_tema() {
+    $("#btn_tema").click(function() {
+        if ($("#btn_tema").hasClass("claro")) {
+            $("link[rel=stylesheet]").attr({href : "./estilos/oscuro.css"});
+            $("#btn_tema").removeClass("claro").addClass("oscuro");
+        } else {
+            if ($("#btn_tema").hasClass("oscuro")) {
+                $("link[rel=stylesheet]").attr({href : "./estilos/claro.css"});
+                $("#btn_tema").removeClass("oscuro").addClass("claro");
+            }
+        }
+    });
+}
 

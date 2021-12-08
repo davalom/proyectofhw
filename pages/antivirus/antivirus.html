@@ -5,75 +5,181 @@
             <article>
                 <h1>Programas Antivirus</h1>
                 <p>
-                    Elit sagittis in congue. Rhoncus sapien nec sit libero ut sagittis nascetur lacinia magna fames parturient vestibulum! Nullam sem sagittis, curae; dui eleifend habitant inceptos montes non feugiat habitasse. Tempus sed fermentum sagittis integer tempor suscipit ultrices nostra ultricies nostra volutpat potenti? Dolor fames molestie ligula fusce elementum? Ligula erat magna dui. Aliquet justo ornare, erat nunc.
+                    Un antivirus en un software creado específicamente para ayudar a detectar y eliminar otro software considerado malicioso. Una vez instalado, la mayoría de los antivirus se ejecutan continuamente en segundo plano. Analizan todos los ficheros en uso en tiempo real con el fin de bloquear la ejecución de software potencialmente malicioso. 
                     </p>
                     <p>
-                    Integer ultricies accumsan in aptent vehicula tellus sollicitudin massa natoque amet. Semper; fringilla neque ridiculus venenatis quisque. Phasellus quam pulvinar felis erat praesent platea, est ullamcorper. Inceptos ornare non tortor euismod congue netus. Pulvinar a velit, elit nisi curabitur? Nascetur vestibulum ultricies orci venenatis metus. Etiam rhoncus aptent montes adipiscing nullam magnis, natoque ad vel blandit sit. Lacus cubilia taciti vulputate interdum fringilla velit sem. Mauris eleifend pellentesque imperdiet dolor, in parturient! Taciti sociosqu condimentum integer facilisis fames rhoncus hac posuere ridiculus et!
+                        En sistemas Windows son muy populares, mientras que en otros sistemas como OSX o Linux son menos comunes debido a que esos sistemas son atacados con menos frecuencia. 
                     </p>
+                    <p>
+                        Los antivirus utilizan distintos tipos de mecanismos para detectar virus, aunque ninguno es totalmente efectivo para identificarlos. Los mecanismos más usados son:
+                    </p>
+                    <ul>
+                        <li>Basados en Firma de virus: El antivirus dispone de una base de datos en las que almacena firmas de virus. Esta medida es fácil de eludir alterando ligeramente el virus para que su hash no coincida con el de la base de datos. Esta técnica se ha mejorado al guardar secuencias concretas del código del virus en lugar del hash del software completo. Así le resulta más difícil al atacante saber que parte del virus modificar para evitar la detección. </li>
+                        <li>Basados en Detección heurística: Buscando patrones de código que se asemejan a los que se usan en los virus. Al no ser necesaria una coincidencia exacta con una firma de virus almacenada es más difícil de burlar.</li>
+                        <li>Basados en Detección por comportamiento: Consiste en escanear el sistema tras detectar un fallo. Es una medida que se usa una vez la infección ya se ha producido.</li>
+                        <li>Basados en la Detección por Sandbox: consiste en ejecutar el software en máquinas virtuales y determinar si el software ejecuta instrucciones maliciosas o no. Es un método fiable pero que ralentiza mucho las operaciones.</li>
+                        <li>Basados en la Detección por inteligencia artificial: consiste en el uso de tecnologías de inteligencia artificial para detectar comportamiento malicioso.</li>
+                        <li>Basado en Indicadores de compromiso (IoC): Una vez los IoC han sido identificados pueden ser utilizados para la detección temprana de intentos de ataque que utilizan sistemas antivirus.</li>
+                    </ul>
                 <h1>Comparativa</h1>
                 <h2>Características generales</h2>
                 <table>
                     <tbody>
                         <tr>
                             <th>Programas</th>
-                            <th>Recuva</th>
-                            <th>TestDisk</th>
+                            <th>Avast</th>
+                            <th>eSeT</th>
                         </tr>
                         <tr>
-                            <td colspan="3" class="tsec">Aplicaciones</td>
+                            <td colspan="3" class="tsec">Licencia y precio</td>
                         </tr>
                         <tr>
-                            <td>Editor de texto</td>
-                            <td>Writer</td>
-                            <td>Documentos</td>
+                            <td>Licencia</td>
+                            <td>Privativa</td>
+                            <td>Privativa</td>
                         </tr>
                         <tr>
-                            <td>Hojas de C&aacute;lculo</td>
-                            <td>Calc</td>
-                            <td>SpreadSheet</td>
+                            <td>Precio</td>
+                            <td>Gratis</td>
+                            <td>34.96€/año</td>
                         </tr>
                         <tr>
-                            <td>Presentaciones</td>
-                            <td>Impress</td>
-                            <td>Presentaciones</td
+                            <td colspan="3" class="tsec">Escaneo</td>
                         </tr>
                         <tr>
-                            <td>Maquetaci&oacute;n</td>
+                            <td>Tiempo real</td>
+                            <td class="tsn">&#x25cf;</td>
+                            <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td>Manual</td>
+                            <td class="tsn">&#x25cf;</td>
+                            <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td>Dispositivos USB</td>
+                            <td class="tsn">&#x25cf;</td>
+                            <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td>Durante el arranque</td>
+                            <td class="tsn">&#x25cf;</td>
+                            <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td>Programado</td>
+                            <td class="tsn">&#x25cf;</td>
+                            <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="tsec">Indice de detección</td>
+                        </tr>
+                        <tr>
+                            <td>Dia 0</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>Malware reciente</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="tsec">Usabilidad</td>
+                        </tr>
+                        <tr>
+                            <td>Falsos positivos (web)</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>F.P. durante escaneo</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>F.P. instalación de software</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="tsec">Ralentización del sistema</td>
+                        </tr>
+                        <tr>
+                            <td>Acceder a la web</td>
+                            <td>31%</td>
+                            <td>12%</td>
+                        </tr>
+                        <tr>
+                            <td>Descarga de ficheros</td>
+                            <td>0%</td>
+                            <td>4%</td>
+                        </tr>
+                        <tr>
+                            <td>Ejecución de programas</td>
+                            <td>7%</td>
+                            <td>4%</td>
+                        </tr>
+                        <tr>
+                            <td>Instalación de software</td>
+                            <td>12%</td>
+                            <td>23%</td>
+                        </tr>
+                        <tr>
+                            <td>Copia de ficheros</td>
+                            <td>1%</td>
+                            <td>1%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="tsec">Protección</td>
+                        </tr>
+                        <tr>
+                            <td>Spyware</td>
+                            <td class="tsn">&#x25cf;</td>
+                            <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td>Gusanos</td>
+                            <td class="tsn">&#x25cf;</td>
+                            <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td>Troyanos</td>
+                            <td class="tsn">&#x25cf;</td>
+                            <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td>Rootkits</td>
+                            <td class="tsn">&#x25cf;</td>
+                            <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td>Phishing</td>
+                            <td class="tsn">&#x25cf;</td>
+                            <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td>Spam</td>
+                            <td class="tsn">&#x25cf;</td>
+                            <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td>Prot. E-Mail</td>
+                            <td class="tsn">&#x25cf;</td>
+                            <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td>Prot. Chat/IM</td>
                             <td class="tsn">-</td>
+                            <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td>Adware</td>
+                            <td class="tsn">&#x25cf;</td>
                             <td class="tsn">-</td>
                         </tr>
                         <tr>
-                            <td>Bases de datos</td>
-                            <td>Base</td>
-                            <td class="tsn">-</td>
-                        </tr>
-                        <tr>
-                            <td>Correo</td>
-                            <td class="tsn">-</td>
-                            <td class="tsn">-</td>
-                        </tr>
-                        <tr>
-                            <td>Notas</td>
-                            <td class="tsn">-</td>
-                            <td class="tsn">-</td>
-                        </tr>
-                        <tr>
-                            <td>Diagramas</td>
-                            <td>Draw</td>
-                            <td class="tsn">-</td>
-                        </tr>
-                        <tr>
-                            <td>Notación Matemática</td>
-                            <td>Math</td>
-                            <td class="tsn">-</td>
-                        </tr>
-                        <tr>
-                            <td>Editor PDF</td>
-                            <td class="tsn">-</td>
-                            <td>PDF</td>
-                        </tr>
-                        <tr>
-                            <td colspan="3"  class="tsec">Sistemas soportados</td>
+                            <td colspan="3" class="tsec">Versiones disponibles</td>
                         </tr>
                         <tr>
                             <td>Windows</td>
@@ -81,19 +187,42 @@
                             <td class="tsn">&#x25cf;</td>
                         </tr>
                         <tr>
-                            <td>OSX</td>
+                            <td>Mac</td>
                             <td class="tsn">&#x25cf;</td>
                             <td class="tsn">&#x25cf;</td>
                         </tr>
                         <tr>
                             <td>Linux</td>
+                            <td class="tsn">-</td>
+                            <td class="tsn">-</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="tsec">Extras</td>
+                        </tr>
+                        <tr>
+                            <td>Facilidad de uso</td>
                             <td class="tsn">&#x25cf;</td>
                             <td class="tsn">&#x25cf;</td>
                         </tr>
                         <tr>
-                            <td>Versión Web</td>
+                            <td>Firewall</td>
+                            <td class="tsn">&#x25cf;</td>
+                            <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td>Control parental</td>
                             <td class="tsn">-</td>
                             <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td>Modo juego</td>
+                            <td class="tsn">&#x25cf;</td>
+                            <td class="tsn">&#x25cf;</td>
+                        </tr>
+                        <tr>
+                            <td>VPN</td>
+                            <td class="tsn">-</td>
+                            <td class="tsn">-</td>
                         </tr>
                     </tbody>
                 </table>
