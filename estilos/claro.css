@@ -1,8 +1,4 @@
 
-
-/*
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Source+Code+Pro:wght@200&family=Work+Sans&display=swap');
-*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&family=Work+Sans:wght@400;600&display=swap');
 
 /* ===============================================
@@ -228,9 +224,6 @@ footer .columna a:hover {
 ++++++++++++++ PAGINA TIPO A (CON MENU LAT) ++++++++++++++++
 ============================================================ */
 
-#cont_dinamico  {
-  /*background-color: #f2f2f2;*/
-}
 
 #cont_dinamico .cont_centrado {
   display: flex;
@@ -436,6 +429,32 @@ footer .columna a:hover {
     background-repeat: no-repeat !important;
     background-position: 50% !important;
     height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#contenido_b .section_divider h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+#contenido_b .section_divider i {
+    margin-left: 1rem;
+    font-style: normal;
+    padding: 1rem;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    mix-blend-mode:lighten;
+    background-blend-mode: none;
+}
+
+#contenido_b .galeria + p {
+    margin: 1rem auto 5rem auto;
+    text-align: center;
 }
 
 #contenido_b section {
@@ -482,6 +501,7 @@ footer .columna a:hover {
 
 #contenido_b tr, #contenido_b td {
     padding: 0.3rem;
+    padding-left: 1rem;
     text-align: center;
     border-bottom: 1px solid #eee;
     overflow:hidden;white-space:nowrap;
@@ -495,9 +515,9 @@ footer .columna a:hover {
 }
 
 #contenido_b th {
-    padding: 0.3rem;
+    padding-left: 1rem;
     height: 3rem;
-    background-color: dodgerblue;
+    background-color: #444;
     color: #fff
 }
 
@@ -510,12 +530,17 @@ footer .columna a:hover {
     background-color: #e6e6e6;
 }
 
-#contenido_b table .tsn {
-    
+#contenido_b table.tdescriptiva td {
+    text-align: left;
 }
 
 #contenido_b tr:hover {
     background-color: #eee;
+}
+
+#contenido_b article img {
+    margin: 2rem auto;
+    display: block;
 }
 
 
@@ -691,6 +716,11 @@ footer .columna a:hover {
         width: 100%;
         font-size: 0.9rem;
     }
+
+    #contenido_b .section_divider h1,
+    #contenido_b .section_divider i {
+        font-size: 3rem;
+    }
 }
 
 /* =========================================================
@@ -714,6 +744,10 @@ footer .columna a:hover {
         box-shadow: none;
     }
 
+    .btn_descarga {
+        color:#000;
+    }
+
     .col-R {
         width: 100%;
         max-width: 100%; 
@@ -726,5 +760,21 @@ footer .columna a:hover {
 
     #contenido article {
         margin:1rem 0;
+    }
+
+    #contenido_b .section_divider {
+        height: 3rem;
+    }
+
+    #contenido_b .section_divider h1,
+    #contenido_b .section_divider i {
+        mix-blend-mode:normal;
+        font-size: 2rem;
+        color: #000;
+        padding-bottom: 2rem;
+    }
+
+    #header_b {
+       display: none;
     }
 }
