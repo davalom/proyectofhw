@@ -433,7 +433,7 @@ footer .columna a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    overflow: hidden;
 }
 
 #contenido_b .section_divider h1 {
@@ -444,7 +444,6 @@ footer .columna a:hover {
 }
 
 #contenido_b .section_divider i {
-    margin-left: 1rem;
     font-style: normal;
     padding: 1rem;
     background-color: #fff;
@@ -670,7 +669,7 @@ footer .columna a:hover {
     }    
     
     .cont_centrado {
-        margin: 0;
+        margin: 0 auto;
         padding: 0 5%;
     }
 
