@@ -277,6 +277,10 @@ footer .columna{
     margin: -2rem -2rem 1rem -2rem;
 }
 
+#contenido article .top_articulo+p {
+    margin-top: 1.5rem;
+}
+
 #contenido article .galeria + p {
     margin: 2rem 0 0 0;
 }
@@ -566,6 +570,7 @@ footer .columna{
 ---------------------  PANTALLAS PEQUEÑAS ------------------
 ============================================================ */
 
+/* ----------- PANTALLAS MUY PEQUEÑAS ------------ */
 @media only screen and (max-width: 450px) {
     html {
         font-size: 10pt;
@@ -580,6 +585,7 @@ footer .columna{
     }
 }
 
+/* ----------- PANTALLAS PEQUEÑAS ------------ */
 @media only screen and (max-width: 1000px) {
     body {
         background-color: #FCFCFC;
@@ -611,16 +617,27 @@ footer .columna{
 
     #contenido article {
         margin:1rem 0;
+        border-radius: 10px;
     }
 
-    #contenido_b .cont_centrado{
-        padding:1rem 1rem;
+    #contenido article video {
+        border-radius: 10px;
     }
 
     #nav3.lateral {
         position:inherit;
         top: 0px;
         transition: 0.3s top;
+    }
+
+    #contenido_b .cont_centrado{
+        padding:1rem 1rem;
+    }
+
+    #contenido_b table {
+        margin: 2rem 0rem 3rem 0rem;
+        width: 100%;
+        font-size: 0.9rem;
     }
 }
 

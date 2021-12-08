@@ -13,16 +13,16 @@
         <title>Fundamentos de hardware</title>
         <!-- ================== LIBRERIAS JS ================== -->
         <script src="./scripts/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="./scripts/slider.js"></script>
-        <script type="text/javascript" src="./scripts/funciones.js"></script>
+        <script src="./scripts/slider.js"></script>
+        <script src="./scripts/funciones.js"></script>
         <!-- ================== SCRIPT PRINCIPAL ================== -->
-        <script type="text/javascript">
+        <script>
             // Array con los nombres de los botones del menu superior para la funcion click_en_navbar()
             const menu =[
                 ["home"],
                 ["ofimatica","msoffice","libreoffice","wpsoffice"],
                 ["recuperar", "testdisk", "recuva"],
-                ["antivirus","avast","eset","bitdefender","malwarebytes"],
+                ["antivirus","avast","eset","clamav"],
                 ["portable", "krita_p", "blender_p"],
                 ["compresor","7zip","winrar","peazip"],
                 ["diseno","photoshop","aphoto","gimp","krita","blender","fusion","kicad"],
@@ -46,7 +46,7 @@
         <header id="cabecera" class="cont_fijo">
             <div id="titulo" class="cont_ancho">
                 <div class="cont_centrado">
-                    <img class="logo"src="./media/logos/main64.png" alt="logo">
+                    <img class="logo" src="./media/logos/main64.png" alt="logo">
                     <h1>Instalación de <br> software</h1>
                 </div>
             </div>
@@ -82,8 +82,9 @@
                         </ul>
                         <ul id="n2r_antivirus" class="nav2_row">
                             <li id="btn2_antivirus">Antivirus ></li>
-                            <li id="btn2_avast">Avast!</li>
-                            <li id="btn2_eset">ESET</li>
+                            <li id="btn2_avast">Avast</li>
+                            <li id="btn2_eset">eSeT</li>
+                            <li id="btn2_clamav">ClamAV</li>
                             <!-- SI DA TIEMPO
                             <li id="btn2_bitdefender">BitDefender</li>
                             <li id="btn2_malwarebytes">MalwareBytes</li>

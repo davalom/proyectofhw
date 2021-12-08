@@ -1,0 +1,69 @@
+<div class="cont_ancho">
+    <div class="cont_centrado row">
+        <div class="col-L">
+            <aside id="nav3" class="lateral">
+                <ul>
+                    <li class="n1"><a href="#instalar_intro">Introducción</a></li>
+                    <li class="n1"><a href="#instalar_gui">Interfaz</li>
+                </ul>
+                <ul>
+                    <li class="n1 raiz"><a href="#instalar_ubuntu">Ubuntu</a></li>
+                    <li class="n2"><a href="#ubu_cmd">Terminal</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div id="contenido" class="col-R">
+            <section id="instalar_intro" class="grid-item ancla">
+                <h1>ClamAV</h1>
+                <article>
+                    <img src="./media/img/antivirus/clamav/clamav.png" class="top_articulo" alt="recuva"/>
+                    <p>Clam Antivirus (ClamAV) es un programa Antivirus de línea de comandos gratuito y Open Source para sistemas Linux. Es usado para detectar troyanos y software malicioso, a pesar de que los sistemas Linux son atacados con mucha menos frecuencia que otros sistemas operativos.</p>
+                    <p>Está disponible para las siguientes distribuciones de Linux:</p>
+                    <ul>
+                        <li>Ubuntu</li>
+                        <li>Debian</li>
+                        <li>CentOS</li>
+                    </ul>
+                    <p>Se puede descargar desde la web oficial del desarrollador de forma gratuita o desde la terminal de Linux.</p>
+                    <a class="btn_descarga" href="https://www.clamav.net/">ClamAV</a>
+                </article>
+            </section>
+            <section id="instalar_gui" class="ancla">
+                <h1>Interfaz Gráfica</h1>
+                <article>
+                    <div class="galeria top_articulo">
+                        <img src="./media/img/antivirus/clamav/galeria/01.png" alt="1">
+                        <img src="./media/img/antivirus/clamav/galeria/02.png" alt="2">
+                        <img src="./media/img/antivirus/clamav/galeria/03.png" alt="3">
+                        <img src="./media/img/antivirus/clamav/galeria/04.png" alt="4">
+                        <img src="./media/img/antivirus/clamav/galeria/05.png" alt="5">
+                        <img src="./media/img/antivirus/clamav/galeria/06.png" alt="6">
+                        <div class="siguiente">
+                        </div>
+                        <div class="previo">
+                        </div>
+                    </div>
+                    <p>ClamAV es en realidad un programa de línea de comandos. Opcionalmente se le puede isnstalar una GUI llamada ClamTK. Presenta una interfaz simple con las opciones básicas de cualquier antivirus com oactualizar la base de datos de virus, analizar un directorio y los archivos en cuarentena.</p>
+                </article>
+            </section>
+            <section id="instalar_ubuntu" class="ancla">
+                <h1>Ubuntu</h1>
+                <article id="ubu_cmd" class="ancla">
+                    <h2>Terminal</h2>
+                    <p>Para instalarlo desde la terminal primero hay que actualizar los repositorios del  sistema:</p>
+                    <code>sudo apt-get update</code>
+                    <p>El programa se instala con el siguiente comando:</p>
+                    <code>sudo apt-get install clamav clamav-daemon</code>
+                    <p>Si se desea se puede comprobar que versión se ha instalado:</p>
+                    <code>clamscan --version</code>
+                       <p>Por último se le puede añadir una GUI instalando ClamTK:</p>
+                    <code>sudo apt-get install clamtk</code>
+                    <video controls loop muted>
+                        <source src="./media/video/antivirus/clamav/ubuntu_cmd.mp4" type="video/mp4">
+                        Video no soportado en éste navegador.
+                    </video>
+                </article>
+            </section>
+        </div>
+    </div>
+</div>
