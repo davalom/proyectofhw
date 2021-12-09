@@ -79,9 +79,9 @@ p {
 #btn_tema
 {
     display: block;
-    width: 35px;
-    height: 35px;
-    background-size: 35px 35px;
+    width: 2rem;
+    height: 2rem;
+    background-size: 2rem 2rem;
     opacity: 20%;
     background-image: url(../media/icons/oscuro.png);
     position: absolute;
@@ -529,7 +529,7 @@ footer .columna a:hover {
     background-color: #e6e6e6;
 }
 
-#contenido_b table.tdescriptiva td {
+#contenido_b table.tdescriptiva td,th {
     text-align: left;
 }
 
@@ -540,6 +540,13 @@ footer .columna a:hover {
 #contenido_b article img {
     margin: 2rem auto;
     display: block;
+}
+
+#contenido_b img.img_centrada {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -721,6 +728,11 @@ footer .columna a:hover {
         font-size: 3rem;
         text-align: center;
         line-height: 5rem;
+    }
+
+    .galeria .siguiente,
+    .galeria .previo {
+        background-size: 3rem;
     }
 }
 
