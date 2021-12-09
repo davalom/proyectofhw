@@ -529,7 +529,8 @@ footer .columna a:hover {
     background-color: #e6e6e6;
 }
 
-#contenido_b table.tdescriptiva td,th {
+#contenido_b table.tdescriptiva td, 
+#contenido_b table.tdescriptiva th {
     text-align: left;
 }
 
