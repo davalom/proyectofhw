@@ -543,6 +543,10 @@ footer .columna a:hover {
     display: block;
 }
 
+#contenido_b a:hover {
+    text-decoration: underline;
+ }
+
 #contenido_b img.img_centrada {
     width: 100%;
     display: block;
