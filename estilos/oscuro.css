@@ -665,7 +665,7 @@ footer .columna a:hover {
 /* ----------- PANTALLAS PEQUEÑAS ------------ */
 @media only screen and (max-width: 1000px) {
     body {
-        background-color: #FCFCFC;
+        background-color: #252525;
     }    
     
     .cont_centrado {
@@ -677,8 +677,8 @@ footer .columna a:hover {
         width: 100%;
         max-width: 100%;
         padding: 1rem 5%;
-        background-color: #FCFCFC;
-        border-bottom: 1px solid #ddd;
+        background-color: #222;
+        border-bottom: 1px solid #191919;
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
     }
 
