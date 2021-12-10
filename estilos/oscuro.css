@@ -88,6 +88,7 @@ p {
     top:1rem;
     right: 1rem;
     cursor: pointer;
+    filter: invert(1);
 }
 
 #btn_tema:hover {

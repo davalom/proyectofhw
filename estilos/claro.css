@@ -502,7 +502,7 @@ footer .columna a:hover {
     padding: 0.3rem;
     padding-left: 1rem;
     text-align: center;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #e8e8e8;
     overflow:hidden;white-space:nowrap;
 }
 
@@ -535,7 +535,7 @@ footer .columna a:hover {
 }
 
 #contenido_b tr:hover {
-    background-color: #eee;
+    background-color: #ebebeb;
 }
 
 #contenido_b article img {
