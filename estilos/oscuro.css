@@ -733,6 +733,8 @@ footer .columna a:hover {
     #contenido_b .section_divider h1,
     #contenido_b .section_divider i {
         font-size: 3rem;
+        text-align: center;
+        line-height: 5rem;
     }
 
     .galeria .siguiente,
