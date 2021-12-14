@@ -1,0 +1,802 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&family=Work+Sans:wght@400;600&display=swap');
+
+/* ===============================================
+-------------------- GENERAL ---------------------
+================================================== */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: #e5e5e5;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 12pt;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  width: 100%;
+  background-color: #252525;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Code Pro', monospace;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding-bottom: 0.5rem;
+    text-align: justify;
+}
+
+.cont_centrado{
+  display: flex;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.cont_ancho {
+  width:100%;
+}
+
+.cont_fijo {
+  position: fixed;
+}
+
+.ancla {
+  /* Distancia calculada con javascript */
+  scroll-margin-top: 0px;
+}
+
+/* ===============================================
+--------------------- HEADER ---------------------
+================================================== */
+#cabecera.cont_fijo {
+  z-index: 99;
+  top: 0;
+  width: 100%; 
+  transition: 0.3s top;
+}
+
+#btn_tema
+{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-size: 2rem 2rem;
+    opacity: 20%;
+    background-image: url(../media/icons/claro.png);
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+#btn_tema:hover {
+    opacity: 100%;
+}
+
+/* ===============================================
+----------------- HEADER > TITULO ----------------
+================================================== */
+#titulo {
+  background-color: #151515;
+  height: 8rem;
+  display: flex;
+}
+
+#titulo .cont_centrado{
+  align-self: center;
+  width: 100%;
+}
+
+#titulo .logo {
+  height: 5rem;
+  filter:invert(1);
+}
+
+#titulo h1 {
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  align-self: center;
+  color: #fff;
+}
+
+/* ===============================================
+----------------- HEADER > MENU NAV --------------
+================================================== */
+
+#barra_navegacion {
+  background-color: #222;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+#barra_navegacion li {
+  display: inline-block;
+  cursor: pointer;
+  flex-basis: content;
+  border-bottom: 0.225rem solid rgba(255, 255, 255, 0);
+  padding: 0.8rem 1rem;
+}
+
+#barra_navegacion li:hover {
+  color: orange;
+  border-bottom-color:orange;
+}
+
+#barra_navegacion .seleccionado {
+  color: orange;
+  border-bottom-color: orange;
+}
+
+/* ===============================================
+------------ HEADER > MENU NAV > NAV1 ------------
+================================================== */
+
+#nav1 {
+  border-top: 1px solid #191919;
+  border-bottom: 1px solid #191919;
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================================
+------------ HEADER > MENU NAV > NAV2 ------------
+================================================== */
+
+#nav2 {
+  display: none;
+  flex-wrap: wrap;
+  padding-top: 2px;
+  border-bottom: 1px solid #191919;
+}
+
+#nav2 .cont_centrado {
+    width: 100%;
+}
+
+.nav2_row {
+  display: none;
+}
+
+/* ===============================================
+------------------ PIE DE PAGINA -----------------
+================================================== */
+
+footer {
+  clear: both;
+  color: #eee;
+}
+
+footer .cont_ancho {
+  background-color: #191919;
+  display: flex;
+}
+
+footer .cont_centrado{
+  padding: 5em 0 5em 0;
+  flex-flow:row;
+}
+
+footer .columna{
+    width: 100%;
+    height: 100%;
+}
+
+footer .columna p, footer .columna a {
+    color: #eee;
+    text-align: center;
+}
+
+footer .columna a {
+    margin: 1rem 0;
+    background-color: #fff;
+    font-weight: bolder;
+    padding: 0.1rem 1rem;
+    color: #333;
+}
+
+footer .columna a:hover {
+    background-color: orange;
+}
+
+
+
+/* =========================================================
+::::::::: ESTILOS DE PAGINA CARGADA DINAMICAMENTE ::::::::::
+------------------------------------------------------------
+++++++++++++++ PAGINA TIPO A (CON MENU LAT) ++++++++++++++++
+============================================================ */
+
+
+#cont_dinamico .cont_centrado {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #252525;
+  padding-top: 50px;
+}
+
+/* =========================================================
+------------------- MENU DE CONTENIDO NAV3 -----------------
+============================================================ */
+
+#nav3.lateral {
+    position: fixed;
+    top: 0px;
+    transition: 0.3s top;
+}
+
+#nav3 ul > li {
+  padding: 5px;
+  padding-left: 28px;
+  font-size: 1.1rem;
+}
+
+#nav3 .n1 {
+  position: relative;
+  font-size: 1.4rem;
+}
+
+#nav3 .raiz {
+  background-image: url("../media/icons/arrow_dwn_dark.png");
+  background-repeat:no-repeat;
+  background-position: center left;
+  background-size: 1.5rem;
+  font-size: 1.4rem;
+}
+
+#nav3 .n2 {
+  padding-left: 3.5rem;
+  font-weight: normal;
+}
+
+#nav3 .n1 a:hover, #nav3 .n2 a:hover {
+    color: orange;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================================
+-------------------- CONTENIDO (TIPO A) --------------------
+============================================================ */
+
+#contenido {
+  padding-bottom: 3rem;
+  overflow: hidden;
+}
+
+#contenido article {
+    background-color: #333;
+    padding: 2rem;
+    border-radius: 20px;
+    margin:1rem 0 1rem 0;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin:1rem;
+}
+
+#contenido h1 {
+    margin: 4rem 0 0 0;
+}
+
+#contenido section:first-of-type h1 {
+    margin:0;
+}
+
+#contenido article h2 + p {
+    margin: 2rem 0 0 0;
+}
+
+#contenido article .top_articulo {
+    width: calc(100% + 4rem);
+    margin: -2rem -2rem 1rem -2rem;
+}
+
+#contenido article .top_articulo+p {
+    margin-top: 1.5rem;
+}
+
+#contenido article .galeria + p {
+    margin: 2rem 0 0 0;
+}
+
+#contenido article img {
+    width: calc(100%);
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+#contenido article video {
+    width: calc(100%);
+    margin: 1rem 0rem 1rem 0rem;
+    border-radius: 20px;
+}
+
+#contenido article ul {
+    margin: 2rem 3rem 2rem 3rem;
+    border-left: 3px solid orange;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+
+#contenido article li {
+    padding: 0.1rem 1rem;
+}
+
+#contenido article li:hover {
+    background-color: #393939;
+    padding: 0.1rem 1rem;
+}
+
+#contenido p + video {
+    margin: 2rem 0 0 0;
+}
+
+#contenido table {
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 0px;
+    border-color: gray;
+    padding: 2rem 2rem 3rem 2rem;
+    cursor:default;
+}
+
+#contenido td:nth-child(1) {
+    width:10rem;
+    font-weight: bold;
+}
+
+#contenido tr, #contenido td {
+    padding: 0.3rem;
+    text-align: left;
+    border-bottom: 1px solid #393939;
+}
+
+#contenido tr:hover {
+    background-color: #393939;
+}
+
+#contenido code {
+    margin: 0.5rem 0 1rem 3rem;
+    padding-left: 1rem;
+    border-left: 5px solid orange;
+    display: block;
+    word-wrap:break-word;
+}
+
+#contenido .galeria {
+    margin: 0;
+    box-shadow: none;
+}
+
+.btn_descarga {
+    display: block;
+    margin: 2rem auto 1rem auto;
+    border:2px solid orange;
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 10rem;
+    text-align: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn_descarga:hover {
+    background-color: rgb(255, 187, 60);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* =========================================================
+::::::::: ESTILOS DE PAGINA CARGADA DINAMICAMENTE ::::::::::
+------------------------------------------------------------
+++++++++++++++ PAGINA TIPO B (SIN MENU LAT) ++++++++++++++++
+============================================================ */
+
+
+#header_b {
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% !important;
+    height: 20rem;
+}
+
+#contenido_b .section_divider {
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% !important;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#contenido_b .section_divider h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+#contenido_b .section_divider i {
+    font-style: normal;
+    padding: 1rem;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    mix-blend-mode:lighten;
+    background-blend-mode: none;
+}
+
+#contenido_b .galeria + p {
+    margin: 1rem auto 5rem auto;
+    text-align: center;
+}
+
+#contenido_b section {
+    margin-bottom: 5rem;
+}
+
+#contenido_b h1 {
+    margin: 2rem 0 2rem 0;
+}
+
+#contenido_b h2+p {
+    margin-top: 2rem;
+}
+
+#contenido_b p+h2 {
+    margin-top: 3rem;
+}
+
+#contenido_b ul {
+    margin: 1rem 3rem 1.5rem 3rem;
+}
+
+#contenido_b li {
+    margin: 0.5rem 0;
+    list-style:disc;
+}
+
+#contenido_b section h1:nth-child(1) {
+    margin: 0 0 2rem 0;
+}
+
+#contenido_b table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 0px;
+    border-color: gray;
+    margin: 2rem 2rem 3rem 2rem;
+    width: calc(100% - 4rem);
+    cursor:default;
+    table-layout:fixed; 
+}
+
+#contenido_b tr, #contenido_b td {
+    padding: 0.3rem;
+    padding-left: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #292929;
+    overflow:hidden;white-space:nowrap;
+}
+
+#contenido_b td:nth-child(1) {
+    text-align: left;
+    width:30%;
+    font-weight: bold;
+    overflow:hidden;white-space:nowrap;
+}
+
+#contenido_b th {
+    padding-left: 1rem;
+    height: 3rem;
+    background-color: #333;
+    color: #fff
+}
+
+#contenido_b th:nth-child(1) {
+    text-align: left;
+}
+
+#contenido_b table .tsec {
+    border-bottom: 1px solid #252525;
+    background-color: #292929;
+}
+
+#contenido_b table.tdescriptiva td, 
+#contenido_b table.tdescriptiva th {
+    text-align: left;
+}
+
+#contenido_b tr:hover {
+    background-color: #292929;
+}
+
+#contenido_b article img {
+    margin: 2rem auto;
+    display: block;
+}
+
+#contenido_b a:hover {
+    text-decoration: underline;
+ }
+
+#contenido_b img.img_centrada {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+------------------------------------------------------------
+::::::::::::::: ESTILOS PARA GALERIA DE IMGS :::::::::::::::
+------------------------------------------------------------
+============================================================ */
+
+.galeria {
+	position:relative;
+	width:100%;
+    margin: 2rem 0 0 0;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.galeria img:first-child {
+	position:relative;
+	width:100%;
+	left:0%;
+	top:0;
+}
+
+.galeria img {
+    margin: 0 !important;
+	position:absolute;
+    display: block;
+	width:100%;
+	left:-100%;
+	top:0;
+}
+
+.galeria .siguiente {
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	left:60%;
+	width:40%;
+	height:100%;
+	opacity:20%;
+	z-index:19;	
+    background-image: url(../media/icons/arrow_r.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.galeria .siguiente:hover{
+	opacity:100%;
+	cursor: pointer;
+}
+
+.galeria .previo {
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	left:0%;
+	width:40%;
+	height:100%;
+	opacity:20%;
+	z-index:19;
+    background-image: url(../media/icons/arrow_l.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
+
+.galeria .previo:hover {
+	opacity:100%;
+	cursor: pointer;
+}
+
+
+/* =========================================================
+::::::::::::::: ESTILOS DE PAGINA RESPONSIVE :::::::::::::::
+------------------------------------------------------------
++++++++++++++++ COLUMNAS PARA PAGINA TIPO A ++++++++++++++++
+============================================================ */
+
+
+.col-L {
+    width: 25%;
+    min-width: 250px;
+}
+
+.col-R {
+    width: 75%;
+    max-width: calc(100% - 250px);
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+[class*="col-"] {
+    float: left;
+}
+
+
+/* =========================================================
+---------------------  PANTALLAS PEQUEÑAS ------------------
+============================================================ */
+
+/* ----------- PANTALLAS MUY PEQUEÑAS ------------ */
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 10pt;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ----------- PANTALLAS PEQUEÑAS ------------ */
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: #252525;
+    }    
+    
+    .cont_centrado {
+        margin: 0 auto;
+        padding: 0 5%;
+    }
+
+    .col-L {
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem 5%;
+        background-color: #222;
+        border-bottom: 1px solid #191919;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .col-R {
+        width: 100%;
+        max-width: 100%; 
+        padding: 3rem 5%;
+    }
+    
+    #cont_dinamico .cont_centrado {
+        padding: 0px;
+    }
+
+    #contenido article {
+        margin:1rem 0;
+        border-radius: 10px;
+    }
+
+    #contenido article video {
+        border-radius: 10px;
+    }
+
+    #nav3.lateral {
+        position:inherit;
+        top: 0px;
+        transition: 0.3s top;
+    }
+
+    #contenido_b .cont_centrado{
+        padding:1rem 1rem;
+    }
+
+    #contenido_b table {
+        margin: 2rem 0rem 3rem 0rem;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    #contenido_b .section_divider h1,
+    #contenido_b .section_divider i {
+        font-size: 3rem;
+        text-align: center;
+        line-height: 5rem;
+    }
+
+    .galeria .siguiente,
+    .galeria .previo {
+        background-size: 3rem;
+    }
+}
+
+/* =========================================================
+--------------------  ESTILO PARA IMPRESION ----------------
+============================================================ */
+
+@media only print {
+    header, footer, .col-L {
+        display: none;
+    }
+
+    #cont_dinamico {
+        margin: 0 !important;
+    }
+
+    .cont_centrado {
+        top: 0px;
+    }
+
+    #contenido article {
+        box-shadow: none;
+    }
+
+    .btn_descarga {
+        color:#000;
+    }
+
+    .col-R {
+        width: 100%;
+        max-width: 100%; 
+        padding: 3rem 3%;
+    }  
+    
+    #cont_dinamico .cont_centrado {
+        padding: 0px;
+    }
+
+    #contenido article {
+        margin:1rem 0;
+    }
+
+    #contenido_b .section_divider {
+        height: 3rem;
+        text-align: center;
+        line-height: 5rem;
+    }
+
+    #contenido_b .section_divider h1,
+    #contenido_b .section_divider i {
+        mix-blend-mode:normal;
+        font-size: 2rem;
+        color: #000;
+        padding-bottom: 2rem;
+    }
+
+    #header_b {
+       display: none;
+    }
+}
