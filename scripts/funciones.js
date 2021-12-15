@@ -237,15 +237,13 @@ function click_en_menu_lateral() {
 // ================================================================
 
 function cambiar_tema() {
-    $("#btn_tema").click(function(event) {
-        if ($("#btn_tema").hasClass("claro")) {
-            $("#tema_css").attr({href : "./estilos/oscuro.css"});
-            $("#btn_tema").removeClass("claro").addClass("oscuro");
+    $("#btn_tema").click(function() {
+        if ($(this).hasClass("oscuro")) {
+            $("#tema_css").attr({href : "./estilos/claro.css"});
+            $(this).removeClass("oscuro").addClass("claro");
         } else {
-            if ($("#btn_tema").hasClass("oscuro")) {
-                $("#tema_css").attr({href : "./estilos/claro.css"});
-                $("#btn_tema").removeClass("oscuro").addClass("claro");
-            }
+            $("#tema_css").attr({href : "./estilos/oscuro.css"});
+            $(this).removeClass("claro").addClass("oscuro");
         }
     });
 }
