@@ -24,33 +24,33 @@
 		<!-- Noticias del canal -->
 		<item>
 			<title>Blender</title>
-            <enclosure url="https://davalom.github.io/proyectofhw/media/img/portable/blender/blender.png" type="image/jpeg"/>
-			<description>Blender es un programa multiplataforma dedicado principalmente al modelado tridimensional, aunque es capaz de hacer otras muchas cosas como composición digital mediante nodos, edición de vídeo, escultura y pintura digital.<br/>Se trata de un programa gratuito y con licencia Open Source GPL3. Fue lanzado en 1994, y en los últimos años ha explotado su popularidad gracias a la versión 2.80.<br/>Puede ver como instalarlo entrando en la web.</description>
+            <enclosure url="https://davalom.github.io/proyectofhw/media/img/portable/blender/blender.png" length="716095" type="image/jpeg"/>
+			<description>Blender es un programa multiplataforma dedicado principalmente al modelado tridimensional, aunque es capaz de hacer otras muchas cosas como composición digital mediante nodos, edición de vídeo, escultura y pintura digital. Se trata de un programa gratuito y con licencia Open Source GPL3. Fue lanzado en 1994, y en los últimos años ha explotado su popularidad gracias a la versión 2.80. Puede ver como instalarlo entrando en la web.</description>
 			<link>https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=blender_p</link>
             <guid>https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=blender_p</guid>
 			<author>dao.asir@outlook.com (David AO)</author>
 			<category>Portables</category>
-			<pubDate>Tue, 11 Jan 2022 18:44:38 GMT</pubDate>
+			<pubDate>Tue, 11 Jan 2022 18:44:38 +0200</pubDate>
 		</item>
 		<item>
 			<title>Avast</title>
-			<enclosure url="https://davalom.github.io/proyectofhw/media/img/antivirus/avast/avast.png" type="image/jpeg"/>
-			<description>Avast es un software antivirus desarrollado por la empresa checa Avast Software. Se trata de software con licencia privativa y fue lanzado al mercado por primera vez en 1991. Si no se tiene en cuenta Microsoft Defender (que viene integrado en Windows), Avast es el software antivirus con más usuarios del mundo.<br/>De las tres versiones que ofrece, la gratuita es la que ha contribuido a la gran popularidad de este antivirus.<br/>Puede ver como instalarlo entrando en la web.</description>
+			<enclosure url="https://davalom.github.io/proyectofhw/media/img/antivirus/avast/avast.png" length="555879" type="image/jpeg"/>
+			<description>Avast es un software antivirus desarrollado por la empresa checa Avast Software. Se trata de software con licencia privativa y fue lanzado al mercado por primera vez en 1991. Si no se tiene en cuenta Microsoft Defender (que viene integrado en Windows), Avast es el software antivirus con más usuarios del mundo. De las tres versiones que ofrece, la gratuita es la que ha contribuido a la gran popularidad de este antivirus. Puede ver como instalarlo entrando en la web.</description>
 			<link>https://davalom.github.io/proyectofhw/?s1=antivirus&amp;s2=avast</link>
             <guid>https://davalom.github.io/proyectofhw/?s1=antivirus&amp;s2=avast</guid>
 			<author>dao.asir@outlook.com  (David AO)</author>
 			<category>Antivirus</category>
-			<pubDate>Tue, 11 Jan 2022 18:48:59 GMT</pubDate>
+			<pubDate>Tue, 11 Jan 2022 18:48:59 +0200</pubDate>
 		</item>
         <item>
 			<title>Krita</title>
-            <enclosure url="https://davalom.github.io/proyectofhw/media/img/portable/krita/krita.png" type="image/jpeg"/>
-			<description>Krita es un software de pintura digital e ilustración gratuito y libre bajo la licencia GNU GPL. Fue lanzado por primera vez en 2005 y desde entonces ha evolucionado hasta convertirse en una herramienta de pintura digital muy potente.<br/> Aunque el diseño de Krita está pensado para crear imágenes desde cero en lugar de manipular fotografías, soporta características similares a las de Adobe Photoshop o Gimp tales como la capacidad de trabajar con imágenes vectoriales.<br/>Puede ver como instalarlo entrando en la web.</description>
+            <enclosure url="https://davalom.github.io/proyectofhw/media/img/portable/krita/krita.png" length="395638" type="image/jpeg"/>
+			<description>Krita es un software de pintura digital e ilustración gratuito y libre bajo la licencia GNU GPL. Fue lanzado por primera vez en 2005 y desde entonces ha evolucionado hasta convertirse en una herramienta de pintura digital muy potente.  Aunque el diseño de Krita está pensado para crear imágenes desde cero en lugar de manipular fotografías, soporta características similares a las de Adobe Photoshop o Gimp tales como la capacidad de trabajar con imágenes vectoriales. Puede ver como instalarlo entrando en la web.</description>
 			<link>https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=krita_p</link>
             <guid>https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=krita_p</guid>
 			<author>dao.asir@outlook.com (David AO)</author>
 			<category>Portables</category>
-			<pubDate>Tue, 11 Jan 2022 19:36:03 GMT</pubDate>
+			<pubDate>Tue, 11 Jan 2022 19:36:03 +0200</pubDate>
 		</item>
 	</channel>
 </rss>
