@@ -24,7 +24,7 @@
 		<!-- Noticias del canal -->
 		<item>
 			<title>Blender</title>
-            <enclosure url="https://davalom.github.io/proyectofhw/media/img/antivirus/portable/blender.png" length="17885" type="image/jpeg"/>
+            <enclosure url="https://davalom.github.io/proyectofhw/media/img/portable/blender.png" length="17885" type="image/jpeg"/>
 			<description>Blender es un programa multiplataforma dedicado principalmente al modelado tridimensional, aunque es capaz de hacer otras muchas cosas como composición digital mediante nodos, edición de vídeo, escultura y pintura digital. Se trata de un programa gratuito y con licencia Open Source GPL3. Fue lanzado en 1994, y en los últimos años ha explotado su popularidad gracias a la versión 2.80. Puede ver como instalarlo en la web original.</description>
 			<link>https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=blender_p</link>
             <guid>https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=blender_p</guid>
