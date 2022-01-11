@@ -52,5 +52,35 @@
 			<category>Portables</category>
 			<pubDate>Tue, 11 Jan 2022 19:36:03 +0200</pubDate>
 		</item>
+        <item>
+			<title>MS Office</title>
+            <enclosure url="https://davalom.github.io/proyectofhw/media/img/ofimatica/msoffice/msoffice.png" length="130863" type="image/jpeg"/>
+			<description>Microsoft Office 365 es una suite ofimática de código cerrado desarrollada por Microsoft. Su modelo de venta es el de la suscripción anual, con un precio 99€/año en su versión familiar para 5 usuarios. Incluye Word, Excel, PowerPoint, Publisher, Access, Outlook y OneNote. Está disponible para los principales sistemas operativos de escritorio, asi como dispositivos móviles y versión web. Puede ver como instalarlo entrando en la web.</description>
+			<link>https://davalom.github.io/proyectofhw/?s1=ofimatica&amp;s2=msoffice</link>
+            <guid>https://davalom.github.io/proyectofhw/?s1=ofimatica&amp;s2=msoffice</guid>
+			<author>dao.asir@outlook.com (David AO)</author>
+			<category>Ofimatica</category>
+			<pubDate>Tue, 11 Jan 2022 20:33:23 +0200</pubDate>
+		</item>
+        <item>
+			<title>Libre Office</title>
+            <enclosure url="https://davalom.github.io/proyectofhw/media/img/ofimatica/libreoffice/libreoffice.png" length="130863" type="image/jpeg"/>
+			<description>LibreOffice es una suite ofimática gratuita y de código abierto. Fue creada en 2010 como una bifurcación de OpenOffice tras la adquisición de ésta por parte de Oracle. Cuenta con un procesador de texto, un editor de hojas de cálculo, un gestor de presentaciones, un gestor de bases de datos, un editor de gráficos vectoriales y un editor de fórmulas matemáticas. Puede ver como instalarlo entrando en la web.</description>
+			<link>https://davalom.github.io/proyectofhw/?s1=ofimatica&amp;s2=libreoffice</link>
+            <guid>https://davalom.github.io/proyectofhw/?s1=ofimatica&amp;s2=libreoffice</guid>
+			<author>dao.asir@outlook.com (David AO)</author>
+			<category>Ofimatica</category>
+			<pubDate>Tue, 11 Jan 2022 20:34:56 +0200</pubDate>
+		</item>
+        <item>
+			<title>WPS Office</title>
+            <enclosure url="https://davalom.github.io/proyectofhw/media/img/ofimatica/wpsoffice/wpsoffice.png" length="130863" type="image/jpeg"/>
+			<description>WPS Office es una suite ofimática disponible para los sistemas operativos Windows, Linux, Android e iOS creada por la empresa china Kingsoft Office. La versión básica es gratuita, aunque se trata de software propietario. Su interfaz es similar a la de Microsoft Office y es compatible con los formatos propietarios de éste. Puede ver como instalarlo entrando en la web.</description>
+			<link>https://davalom.github.io/proyectofhw/?s1=ofimatica&amp;s2=wpsoffice</link>
+            <guid>https://davalom.github.io/proyectofhw/?s1=ofimatica&amp;s2=wpsoffice</guid>
+			<author>dao.asir@outlook.com (David AO)</author>
+			<category>Ofimatica</category>
+			<pubDate>Tue, 11 Jan 2022 20:36:38 +0200</pubDate>
+		</item>
 	</channel>
 </rss>
