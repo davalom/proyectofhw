@@ -31,9 +31,17 @@
             ];
 
             $(document).ready(function() { // Al finalizar la carga del DOM ...
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+                let s1 = urlParams.get('s1');
+                let s2 = urlParams.get('s2');
+                if (s1 == null ||  s2 == null) {
+                    s1 = "home";
+                    s2 = "home";
+                }
                 // ============ CONFIGURACION INICIAL ===================
-                cargar_contenido ("home", "home");
-                marcar_boton($("#btn1_home"),1);
+                cargar_contenido (s1, s2);
+                marcar_boton($("#btn1_" + s1),1);
                 // =============== ESCUCHA DE EVENTOS ===================
                 hacer_scroll();
                 redimensionar_ventana();
@@ -137,6 +145,8 @@
                         
                         <p><a href="https://github.com/davalom/proyectofhw" target="_blank">Código disponible en GitHub</a></p>
                         <p>2021 &#8226; David AO</p>
+                        <br>
+                        <p><a href="./rss.xml">RSS</a><a href="atom.xml">ATOM</a></p>
                     </div>
                 </div>
             </div>
