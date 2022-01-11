@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+		<!--Prólogo-->
+		<title>David AO - P.FHW</title>
+		<link>https://davalom.github.io/proyectofhw</link>
+		<description>
+			Instalación de software
+		</description>
+		<category>Software</category>
+		<copyright>1º ASIR - LMSGI</copyright>
+		<image>
+			<url>https://davalom.github.io/proyectofhw/favicon.ico</url>
+			<title>David AO - P.FHW</title>
+			<link>https://davalom.github.io/proyectofhw/</link>
+			<width>30</width>
+			<height>30</height>
+		</image>
+		<language>es-es</language>
+		<lastBuildDate>Sun, 05 Dec 2021 12:15:00 +0100</lastBuildDate>
+		<webMaster>fake-email@gmail.com</webMaster>
+		
+		<!-- Noticias del canal -->
+		<item>
+			<title>Antivirus</title>
+			<description>En este artículo encontrará información sobre software antivirus</description>
+			<link>https://davalom.github.io/proyectofhw/pages/antivirus/antivirus.html</link>
+			<author>David AO</author>
+			<category>software</category>
+			<pubDate>Jueves, 16 Dic 2021 12:25:00 +0100</pubDate>
+		</item>
+			<item>
+			<title>París</title>
+			<description>En este artículo encontrará información sobre software portable</description>
+			<link>https://davalom.github.io/proyectofhw/pages/portable/portable.html</link>
+			<author>David AO</author>
+			<category>software</category>
+			<pubDate>Jueves, 16 Dic 2021 12:25:00 +0100</pubDate>
+		</item>
+	</channel>
+</rss>
