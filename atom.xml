@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom"
+	xml:lang="es" 
+	xml:base="https://davalom.github.io/proyectofhw/">
+
+	<id>https://davalom.github.io/proyectofhw/</id>
+
+	<title>David AO - P.FHW</title>
+	<updated>2021-12-21T19:06:00+01:00</updated>
+
+	<link rel="alternate" href="https://davalom.github.io/proyectofhw/atom.xml" type="application/atom+xml"/>
+
+	<author>
+		<name>David AO</name>
+		<email>dao.asir@outlook.com</email>
+	</author>
+
+	<category term="Software"/>
+
+	<logo>https://davalom.github.io/proyectofhw/favicon.png</logo>
+
+	<entry>
+		<id>https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=blender_p</id>
+		<title>Blender</title>
+		<updated>2021-02-12T18:30:00+01:00</updated>
+		<author>
+			<name>David AO</name>
+			<email>dao.asir@outlook.com</email>
+		</author>
+		<summary>
+		<![CDATA[             
+            <img src="./media/img/portable/blender/blender.png" class="top_articulo" alt="testdisk"/>
+            <p>Blender es un programa multiplataforma dedicado principalmente al modelado tridimensional, aunque es capaz de hacer otras muchas cosas como composición digital mediante nodos, edición de vídeo, escultura y pintura digital.
+            </p>
+            <p>Se trata de un programa gratuito y con licencia Open Source GPL3. Fue lanzado en 1994, y en los últimos años ha explotado su popularidad gracias a la versión 2.80. Entre sus características principales se encuentran:
+            </p>
+            <ul>
+                <li>Renderizado</li>
+                <li>Modelado 3D</li>
+                <li>Escultura</li>
+                <li>Animación</li>
+                <li>Efectos especiales</li>
+                <li>Simulaciones</li>
+                <li>Integración con herramientas del sector audovisual</li>
+                <li>Edición de vídeo</li>
+                <li>API de Python para uso de scripts</li>
+            </ul>
+            <p>Sus requisitos mínimos son:</p>
+            <table>
+                <tr>
+                    <td>CPU</td>
+                    <td>64bit x4 núcleos con soprtet SSE2</td>
+                </tr>
+                <tr>
+                    <td>RAM</td>
+                    <td>8GB</td>
+                </tr>
+                <tr>
+                    <td>Pantalla</td>
+                    <td>1920x1080</td>
+                </tr>
+                <tr>
+                    <td>GPU</td>
+                    <td>2GB VRAM, OpenGL 4.3</td>
+                </tr>
+            </table>
+            <p>Puede ver como instalarlo entrando en la web.</p> 
+        ]]>
+		</summary>
+		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=blender_p"></link>
+	</entry>
+	
+</feed>
