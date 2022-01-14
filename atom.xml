@@ -72,7 +72,7 @@
 		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=blender_p"></link>
 	</entry>
 
-    	<entry>
+    <entry>
 		<id>https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=krita_p</id>
 		<title>Krita</title>
 		<updated>2022-01-12T18:32:00+01:00</updated>
@@ -109,6 +109,52 @@
         ]]>
 		</summary>
 		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=krita_p"></link>
+	</entry>
+
+    <entry>
+		<id>https://davalom.github.io/proyectofhw/?s1=ofimatica&amp;s2=libreoffice</id>
+		<title>Libre Office</title>
+		<updated>2022-01-12T18:40:00+01:00</updated>
+		<author>
+			<name>David AO</name>
+			<email>dao.asir@outlook.com</email>
+		</author>
+		<summary type="html">
+		<![CDATA[             
+            <img src="./media/img/ofimatica/libreoffice/libreoffice.png" class="top_articulo" alt="office"/>
+            <p>LibreOffice es una suite ofimática gratuita y de código abierto. Fue creada en 2010 como una bifurcación de OpenOffice tras la adquisición de ésta por parte de Oracle.
+                Cuenta con un procesador de texto, un editor de hojas de cálculo, un gestor de presentaciones, un gestor de bases de datos, un editor de gráficos vectoriales y un editor de fórmulas matemáticas.  
+            </p>
+            <table>
+                <tr>
+                    <td>Writer</td>
+                    <td>Procesador de texto</td>
+                </tr>
+                <tr>
+                    <td>Calc</td>
+                    <td>Editor de hojas de cálculo</td>
+                </tr>
+                <tr>
+                    <td>Impress</td>
+                    <td>Gestor de presentaciones</td>
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td>Editor de notación matemática</td>
+                </tr>
+                <tr>
+                    <td>Base</td>
+                    <td>Gestor de bases de datos</td>
+                </tr>
+                <tr>
+                    <td>Draw</td>
+                    <td>Editor de gráficos vectoriales</td>
+                </tr>
+            </table>
+            <p>Puede ver como instalarlo entrando en la web.</p> 
+        ]]>
+		</summary>
+		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=ofimatica&amp;s2=libreoffice"></link>
 	</entry>
 	
 </feed>
