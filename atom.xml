@@ -29,7 +29,7 @@
 			<name>David AO</name>
 			<email>dao.asir@outlook.com</email>
 		</author>
-		<summary>
+		<description>
 		<![CDATA[             
             <img src="./media/img/portable/blender/blender.png" class="top_articulo" alt="testdisk"/>
             <p>Blender es un programa multiplataforma dedicado principalmente al modelado tridimensional, aunque es capaz de hacer otras muchas cosas como composición digital mediante nodos, edición de vídeo, escultura y pintura digital.
@@ -68,7 +68,7 @@
             </table>
             <p>Puede ver como instalarlo entrando en la web.</p> 
         ]]>
-		</summary>
+		</description>
 		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=blender_p"></link>
 	</entry>
 
@@ -80,7 +80,7 @@
 			<name>David AO</name>
 			<email>dao.asir@outlook.com</email>
 		</author>
-		<summary>
+		<content:encoded>
 		<![CDATA[             
             <img src="./media/img/portable/krita/krita.png" class="top_articulo" alt="testdisk"/>
             <p>Krita es un software de pintura digital e ilustración gratuito y libre bajo la licencia GNU GPL. Fue lanzado por primera vez en 2005 y desde entonces ha evolucionado hasta convertirse en una herramienta de pintura digital muy potente.
@@ -107,7 +107,7 @@
             </table>
             <p>Puede ver como instalarlo entrando en la web.</p> 
         ]]>
-		</summary>
+		</content:encoded>
 		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=krita_p"></link>
 	</entry>
 	
