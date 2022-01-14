@@ -6,9 +6,10 @@
 
 	<id>https://davalom.github.io/proyectofhw/</id>
 
-	<title>David AO - P.FHW</title>
+	<title>David AO - P.FHW (atom)</title>
 	<updated>2021-12-21T19:06:00+01:00</updated>
 
+    <link rel="self" href="https://davalom.github.io/proyectofhw/atom.xml" type="application/atom+xml"/>
 	<link rel="alternate" href="https://davalom.github.io/proyectofhw/atom.xml" type="application/atom+xml"/>
 
 	<author>
@@ -23,7 +24,7 @@
 	<entry>
 		<id>https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=blender_p</id>
 		<title>Blender</title>
-		<updated>2021-02-12T18:30:00+01:00</updated>
+		<updated>2022-01-12T18:30:00+01:00</updated>
 		<author>
 			<name>David AO</name>
 			<email>dao.asir@outlook.com</email>
@@ -69,6 +70,45 @@
         ]]>
 		</summary>
 		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=blender_p"></link>
+	</entry>
+
+    	<entry>
+		<id>https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=krita_p</id>
+		<title>Krita</title>
+		<updated>2022-01-12T18:32:00+01:00</updated>
+		<author>
+			<name>David AO</name>
+			<email>dao.asir@outlook.com</email>
+		</author>
+		<summary>
+		<![CDATA[             
+            <img src="./media/img/portable/krita/krita.png" class="top_articulo" alt="testdisk"/>
+            <p>Krita es un software de pintura digital e ilustración gratuito y libre bajo la licencia GNU GPL. Fue lanzado por primera vez en 2005 y desde entonces ha evolucionado hasta convertirse en una herramienta de pintura digital muy potente.
+            </p>
+            <p>Aunque el diseño de Krita está pensado para crear imágenes desde cero en lugar de manipular fotografías, soporta características similares a las de Adobe Photoshop o Gimp tales como la capacidad de trabajar con imágenes vectoriales.</p>
+            <p>Sus requisitos mínimos son:</p>
+            <table>
+                <tr>
+                    <td>CPU</td>
+                    <td>1.6Ghz 24 núcleos</td>
+                </tr>
+                <tr>
+                    <td>RAM</td>
+                    <td>2GB</td>
+                </tr>
+                <tr>
+                    <td>HDD</td>
+                    <td>300MB</td>
+                </tr>
+                <tr>
+                    <td>GPU</td>
+                    <td>OpenGL 3.0</td>
+                </tr>
+            </table>
+            <p>Puede ver como instalarlo entrando en la web.</p> 
+        ]]>
+		</summary>
+		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=portable&amp;s2=krita_p"></link>
 	</entry>
 	
 </feed>
