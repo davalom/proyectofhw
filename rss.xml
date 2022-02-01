@@ -82,5 +82,45 @@
 			<category>Ofimatica</category>
 			<pubDate>Tue, 11 Jan 2022 20:36:38 +0200</pubDate>
 		</item>
+        <item>
+			<title>ClamAV</title>
+            <enclosure url="https://davalom.github.io/proyectofhw/media/img/antivirus/clamav/clamav.png" length="140873" type="image/jpeg"/>
+			<description>Clam Antivirus (ClamAV) es un programa Antivirus de línea de comandos gratuito y Open Source para sistemas Linux. Es usado para detectar troyanos y software malicioso, a pesar de que los sistemas Linux son atacados con mucha menos frecuencia que otros sistemas operativos. Puede ver como instalarlo entrando en la web.</description>
+			<link>https://davalom.github.io/proyectofhw/?s1=antivirus&amp;s2=clamav</link>
+            <guid>https://davalom.github.io/proyectofhw/?s1=antivirus&amp;s2=clamav</guid>
+			<author>dao.asir@outlook.com (David AO)</author>
+			<category>Antivirus</category>
+			<pubDate>Tue, 01 Feb 2022 20:37:24 +0200</pubDate>
+		</item>
+        <item>
+			<title>eSeT</title>
+            <enclosure url="https://davalom.github.io/proyectofhw/media/img/antivirus/eset/eset.png" length="185319" type="image/jpeg"/>
+			<description>eSeT NOD32 es un programa antivirus de pago y con licencia privativa. Está desarrollado por la empresa eSeT, de origen eslovaco. Hay 3 versiones destinadas para usuarios domésticos: NOD32 Antivirus, Internet Security y Smart Security. Puede ver como instalarlo entrando en la web.</description>
+			<link>https://davalom.github.io/proyectofhw/?s1=antivirus&amp;s2=eset</link>
+            <guid>https://davalom.github.io/proyectofhw/?s1=antivirus&amp;s2=eset</guid>
+			<author>dao.asir@outlook.com (David AO)</author>
+			<category>Antivirus</category>
+			<pubDate>Tue, 01 Feb 2022 20:38:24 +0200</pubDate>
+		</item>
+        <item>
+			<title>Recuva</title>
+            <enclosure url="https://davalom.github.io/proyectofhw/media/img/recuperar/recuva/recuva.png" length="181723" type="image/jpeg"/>
+			<description>Recuva es un software de recuperación de información desarrollado por Piriform. Aunque su versión básica es gratuita, su código es privativo. Al tratarse de un programa que necesita pocos recursos, no especifica requisitos de hardware mínimos. El un único requisito que pide es que la máquina ejecute Windows 98 o superior. Puede ver como instalarlo entrando en la web.</description>
+			<link>https://davalom.github.io/proyectofhw/?s1=recuperar&amp;s2=recuva</link>
+            <guid>https://davalom.github.io/proyectofhw/?s1=recuperar&amp;s2=recuva</guid>
+			<author>dao.asir@outlook.com (David AO)</author>
+			<category>Recuperar</category>
+			<pubDate>Tue, 01 Feb 2022 20:39:24 +0200</pubDate>
+		</item>
+        <item>
+			<title>TestDisk</title>
+            <enclosure url="https://davalom.github.io/proyectofhw/media/img/recuperar/testdisk/testdisk.png" length="186214" type="image/jpeg"/>
+			<description>Test Disk es un potente programa de recuperación de datos para usuarios avanzados. Es capaz de recuperar particiones borradas o corruptas y los ficheros que contenian. Es fácil de utilizar, aunque hay que tener cuidado al usarla ya que si se escoge la opción erronea se puede corromper toda la estructura del disco. Personalmente, me ha servido para recuperar la información de dos discos duros con particiones irreconocibles por el SO. Puede ver como instalarlo entrando en la web. </description>
+			<link>https://davalom.github.io/proyectofhw/?s1=recuperar&amp;s2=testdisk</link>
+            <guid>https://davalom.github.io/proyectofhw/?s1=recuperar&amp;s2=testdisk</guid>
+			<author>dao.asir@outlook.com (David AO)</author>
+			<category>Recuperar</category>
+			<pubDate>Tue, 01 Feb 2022 20:40:24 +0200</pubDate>
+		</item>
 	</channel>
 </rss>
