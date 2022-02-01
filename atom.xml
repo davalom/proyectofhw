@@ -156,5 +156,265 @@
 		</summary>
 		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=ofimatica&amp;s2=libreoffice"></link>
 	</entry>
+
+    <entry>
+		<id>https://davalom.github.io/proyectofhw/?s1=ofimatica&amp;s2=msoffice</id>
+		<title>Microsoft Office Office</title>
+		<updated>2022-01-30T18:40:00+01:00</updated>
+		<author>
+			<name>David AO</name>
+			<email>dao.asir@outlook.com</email>
+		</author>
+		<summary type="html">
+		<![CDATA[             
+            <img src="./media/img/ofimatica/msoffice/msoffice.png" class="top_articulo" alt="office"/>
+            <p>Microsoft Office 365 es una suite ofimática de código cerrado desarrollada por Microsoft. Su modelo de venta es el de la suscripción anual, con un precio 99€/año en su versión familiar para 5 usuarios. Incluye los siguientes programas:</p>
+            <table>
+                <tr>
+                    <td>Word</td>
+                    <td>Procesador de texto</td>
+                </tr>
+                <tr>
+                    <td>Excel</td>
+                    <td>Hoja de cálculo</td>
+                </tr>
+                <tr>
+                    <td>PowerPoint</td>
+                    <td>Presentaciones</td>
+                </tr>
+                <tr>
+                    <td>Publisher</td>
+                    <td>Maquetación</td>
+                </tr>
+                <tr>
+                    <td>Access</td>
+                    <td>Gestor de bases de datos</td>
+                </tr>
+                <tr>
+                    <td>Outlook</td>
+                    <td>Cliente de correo electrónico</td>
+                </tr>
+                <tr>
+                    <td>One Note</td>
+                    <td>Programa de notas</td>
+                </tr>
+            </table>
+            <p>Puede ver como instalarlo entrando en la web.</p> 
+        ]]>
+		</summary>
+		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=ofimatica&amp;s2=msoffice"></link>
+	</entry>
+    <entry>
+		<id>https://davalom.github.io/proyectofhw/?s1=ofimatica&amp;s2=wpsoffice</id>
+		<title>WPS Office Office</title>
+		<updated>2022-01-30T18:41:00+01:00</updated>
+		<author>
+			<name>David AO</name>
+			<email>dao.asir@outlook.com</email>
+		</author>
+		<summary type="html">
+		<![CDATA[             
+            <img src="./media/img/ofimatica/wpsoffice/wpsoffice.png" class="top_articulo" alt="office"/>
+            <p>WPS Office es una suite ofimática disponible para los sistemas operativos Windows, Linux, Android e iOS creada por la empresa china Kingsoft Office. La versión básica es gratuita, aunque se trata de software propietario. Su interfaz es similar a la de Microsoft Office y es compatible con los formatos propietarios de éste.</p>
+            <table>
+                <tr>
+                    <td>Documento</td>
+                    <td>Procesador de texto</td>
+                </tr>
+                <tr>
+                    <td>Spreadsheets</td>
+                    <td>Hoja de cálculo</td>
+                </tr>
+                <tr>
+                    <td>Presentación</td>
+                    <td>Presentaciones</td>
+                </tr>
+                <tr>
+                    <td>PDF</td>
+                    <td>Editor de PDF</td>
+                </tr>
+            </table>
+            <p>Puede ver como instalarlo entrando en la web.</p> 
+        ]]>
+		</summary>
+		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=ofimatica&amp;s2=wpsoffice"></link>
+	</entry>
+
+    <entry>
+		<id>https://davalom.github.io/proyectofhw/?s1=recuperar&amp;s2=recuva</id>
+		<title>Recuva</title>
+		<updated>2022-01-30T18:42:00+01:00</updated>
+		<author>
+			<name>David AO</name>
+			<email>dao.asir@outlook.com</email>
+		</author>
+		<summary type="html">
+		<![CDATA[             
+            <img src="./media/img/recuperar/recuva/recuva.png" class="top_articulo" alt="recuva"/>
+            <p>Recuva es un software de recuperación de información desarrollado por Piriform. Aunque su versión básica es gratuita, su código es privativo.</p>
+            <p>Al tratarse de un programa que necesita pocos recursos, no especifica requisitos de hardware mínimos. El un único requisito que pide es que la máquina ejecute Windows 98 o superior. Es capaz de recuperar los siguientes formatos de fichero:</p>
+            <table>
+                <tr>
+                    <td>Imágenes</td>
+                    <td>BMP, JPG, JPEG, PNG, GIF, TIFF</td>
+                </tr>
+                <tr>
+                    <td>MS Office</td>
+                    <td>DOCX, XLSX, PPTX,DOC, XLS, PPT, VSD</td>
+                </tr>
+                <tr>
+                    <td>OpenOffice</td>
+                    <td>ODT, ODP, ODS, ODG, ODF</td>
+                </tr>
+                <tr>
+                    <td>Audio</td>
+                    <td>MP3, MP2, MP1, AIF, WMA, OGG, WAV, AAC, M4A</td>
+                </tr>
+                <tr>
+                    <td>Vídeo</td>
+                    <td>MOV, MPG, MP4, 3GP, FLV, WMV, AVI</td>
+                </tr>
+                <tr>
+                    <td>Comprimidos</td>
+                    <td>RAR, ZIP, CAB</td>
+                </tr>
+                <tr>
+                    <td>Otros</td>
+                    <td>PDF, RTF, VXD, URL</td>
+                </tr>
+            </table>
+            <p>Puede ver como instalarlo entrando en la web.</p> 
+        ]]>
+		</summary>
+		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=recuperar&amp;s2=recuva"></link>
+	</entry>
+
+    <entry>
+		<id>https://davalom.github.io/proyectofhw/?s1=recuperar&amp;s2=testdisk</id>
+		<title>TestDisk</title>
+		<updated>2022-01-30T18:43:00+01:00</updated>
+		<author>
+			<name>David AO</name>
+			<email>dao.asir@outlook.com</email>
+		</author>
+		<summary type="html">
+		<![CDATA[             
+            <img src="./media/img/recuperar/testdisk/testdisk.png" class="top_articulo" alt="testdisk"/>
+            <p>Test Disk es un potente programa de recuperación de datos para usuarios avanzados. Es capaz de recuperar particiones borradas o corruptas y los ficheros que contenian. 
+            </p>
+            <p>Es fácil de utilizar, aunque hay que tener cuidado al usarla ya que si se escoge la opción erronea se puede corromper toda la estructura del disco. Personalmente, me ha servido para recuperar la información de dos discos duros con particiones irreconocibles por el SO.</p>
+            <p>Tiene licencia GPLv2+ (Open Source) y puede recuperar particiones para los siguientes sistemas de archivos:</p>
+            <ul>
+                <li>BeFS</li>
+                <li>BSD disklabel</li>
+                <li>CramFS</li>
+                <li>FAT12, FAT16 y FAT32</li>
+                <li>exFAT</li>
+                <li>HFS y HFS+</li>
+                <li>JFS</li>
+                <li>ext2, ext3 y ext4</li>
+                <li>Linux Raid</li>
+                <li>Linux Swap</li>
+                <li>LVM y LVM2</li>
+                <li>Mapa de particiones Mac</li>
+                <li>NSS</li>
+                <li>NTFS</li>
+                <li>ReiserFS 3.5, 3.6 y 4</li>
+                <li>i386 disklabel</li>
+                <li>UFS y UFS2</li>
+                <li>XFS</li>
+            </ul>
+            <p>Puede ver como instalarlo entrando en la web.</p> 
+        ]]>
+		</summary>
+		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=recuperar&amp;s2=testdisk"></link>
+	</entry>
+
+    <entry>
+		<id>https://davalom.github.io/proyectofhw/?s1=antivirus&amp;s2=clamav</id>
+		<title>ClamAV</title>
+		<updated>2022-01-30T18:44:00+01:00</updated>
+		<author>
+			<name>David AO</name>
+			<email>dao.asir@outlook.com</email>
+		</author>
+		<summary type="html">
+		<![CDATA[             
+            <img src="./media/img/antivirus/clamav/clamav.png" class="top_articulo" alt="recuva"/>
+            <p>Clam Antivirus (ClamAV) es un programa Antivirus de línea de comandos gratuito y Open Source para sistemas Linux. Es usado para detectar troyanos y software malicioso, a pesar de que los sistemas Linux son atacados con mucha menos frecuencia que otros sistemas operativos.</p>
+            <p>Está disponible para las siguientes distribuciones de Linux:</p>
+            <ul>
+                <li>Ubuntu</li>
+                <li>Debian</li>
+                <li>CentOS</li>
+            </ul>
+            <p>Puede ver como instalarlo entrando en la web.</p> 
+        ]]>
+		</summary>
+		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=antivirus&amp;s2=clamav"></link>
+	</entry>
+
+    <entry>
+		<id>https://davalom.github.io/proyectofhw/?s1=antivirus&amp;s2=avast</id>
+		<title>Avast</title>
+		<updated>2022-01-30T18:45:00+01:00</updated>
+		<author>
+			<name>David AO</name>
+			<email>dao.asir@outlook.com</email>
+		</author>
+		<summary type="html">
+		<![CDATA[             
+            <img src="./media/img/antivirus/avast/avast.png" class="top_articulo" alt="avast"/>
+            <p>Avast es un software antivirus desarrollado por la empresa checa Avast Software. Se trata de software con licencia privativa y fue lanzado al mercado por primera vez en 1991. Si no se tiene en cuenta Microsoft Defender (que viene integrado en Windows), Avast es el software antivirus con más usuarios del mundo.</p>
+            <p>De las tres versiones que ofrece, la gratuita es la que ha contribuido a la gran popularidad de este antivirus.</p>
+            <p>Estas son algunas de las funciones de protección que ofrece la versión básica:</p>
+            <ul>
+                <li>Protección en tiempo real</li>
+                <li>Análisis heurístico</li>
+                <li>Firewall</li>
+                <li>Escudo anti Ransomware</li>
+                <li>Identificación de vulnerabilidades en la red local</li>
+            </ul>
+            <p>Puede ver como instalarlo entrando en la web.</p> 
+        ]]>
+		</summary>
+		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=antivirus&amp;s2=avast"></link>
+	</entry>
+
+    <entry>
+		<id>https://davalom.github.io/proyectofhw/?s1=antivirus&amp;s2=eset</id>
+		<title>eSeT</title>
+		<updated>2022-01-30T18:46:00+01:00</updated>
+		<author>
+			<name>David AO</name>
+			<email>dao.asir@outlook.com</email>
+		</author>
+		<summary type="html">
+		<![CDATA[             
+            <img src="./media/img/antivirus/eset/eset.png" class="top_articulo" alt="avast"/>
+            <p>eSeT NOD32 es un programa antivirus de pago y con licencia privativa. Está desarrollado por la empresa eSeT, de origen eslovaco.</p>
+            <p>Hay tres versiones destinadas para usuarios domésticos:</p>
+            <table>
+                <tr>
+                    <td>NOD32 Antivirus</td>
+                    <td>Protección básica</td>
+                    <td>34.96€</td>
+                </tr>
+                <tr>
+                    <td>Internet Security</td>
+                    <td>Protección básica + Protección en red y bancaria</td>
+                    <td>44.95€</td>
+                </tr>
+                <tr>
+                    <td>Smart Security</td>
+                    <td>La versión más completa, con encriptación de datos y gestor de contraseñas</td>
+                    <td>59.96€</td>
+                </tr>
+            </table>
+            <p>Puede ver como instalarlo entrando en la web.</p> 
+        ]]>
+		</summary>
+		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=antivirus&amp;s2=eset"></link>
+	</entry>
 	
 </feed>
