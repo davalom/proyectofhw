@@ -1,0 +1,380 @@
+<div class="cont_ancho">
+    <div class="cont_centrado row">
+        <div class="col-L">
+            <aside id="nav3" class="lateral">
+                <ul>
+                    <li class="n1"><a href="#instalar_intro">Introducción</a></li>
+                </ul>
+                <ul>
+                    <li class="n1 raiz"><a href="#pasos">Primeros pasos</a></li>
+                    <li class="n2"><a href="#pas_usb">USB de arranque</a></li>
+                    <li class="n2"><a href="#pas_ini">Configuración inicial</a></li>
+                </ul>
+                <ul>
+                    <li class="n1 raiz"><a href="#local">Local</a></li>
+                    <li class="n2"><a href="#loc_crear">Crear</a></li>
+                    <li class="n2"><a href="#loc_restaurar">Restaurar</a></li>
+                </ul>
+                <ul>
+                    <li class="n1 raiz"><a href="#remoto">Remoto</a></li>
+                    <li class="n2"><a href="#rem_crear">Crear imagen</a></li>
+                    <li class="n2"><a href="#rem_restaurar">Restaurar</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div id="contenido" class="col-R">
+            <section id="instalar_intro" class="grid-item ancla">
+                <h1>Clonezilla</h1>
+                <article>
+                    <img src="./media/img/recuperar/clonezilla/clonezilla.png" class="top_articulo" alt="testdisk"/>
+                    <p>Clonezilla es un programa de creación/restauración de imágenes de particiones y discos completos. Es útil para desplegar sistemas de forma rápida en varios ordenadores y realizar copias de seguridad de sistemas completos.
+                    </p>
+                    <p>En estas prácticas vamos a usar Clonezilla live, la versión diseñada para crear imágenes de sistemas individuales</p>
+                    <p>Tiene licencia GNU GPLv2 (Open Source) aunque para su funcionamiento depende de más software (también Open Source) con otros tipos de licencia.</p>
+                    <p>A continuación se listan algunas de sus características principales:</p>
+                    <ul>
+                        <li>Soporte para gran cantidad de sistemas de archivos.</li>
+                        <li>Soporte para volúmenes virtuales LVM2 en sistemas Linux.</li>
+                        <li>Reinstalación del boot loader.</li>
+                        <li>Soporte para discos MBR y GPT.</li>
+                        <li>Modo desatendido.</li>
+                        <li>Soporte para restaurar varios dispositivos simultáneamente desde una única imagen.</li>
+                        <li>Soporte para encriptación de imágenes.</li>
+                        <li>Soporte para copias multicast y protocolo Bittorrent.</li>
+                        <li>Capacidad para restaurar desde dispositivo local, servidor ssh, samba NFS o WebDAV.</li>
+                    </ul>
+                    <p>Los requisitos mínimos para su funcionamiento son:</p>
+                    <ul>
+                        <li>Procesador de 32 o 64 bits.</li>
+                        <li>196MB de memoria RAM.</li>
+                        <li>Dispositivo de arranque como lector de CD o puerto USB.</li>
+                        <li>Disco de destino con espacio suficiente para realizar la copia.</li>
+                    </ul>
+                    <p>Se puede descargar desde la web del desarrollador:</p>
+                    <a class="btn_descarga" href="https://clonezilla.org/" target="_blank">Clonezilla</a>
+                </article>
+            </section>
+            <section id="pasos" class="ancla">
+                <h1>Primeros pasos</h1>
+                <article id="pas_usb" class="ancla">
+                    <h2>Crear USB de arranque</h2>
+                    <p>Antes de empezar a utilizar Clonezilla tendremos que crear un medio arrancable desde el que ejecutar la aplicación. Para ambas prácticas utilizaremos un pendrive de 64GB como pendrive de arranque, aunque se pueden utilizar otros medios como puede ser un CD o DVD.</p>
+                    <p>A continución se detallan los pasos a seguir para crearlo. Este procedimiento es idéntico tanto si queremos hacer una copia en un disco local como en un servidor remoto y sólo es necesario hacerlo una vez.</p>
+                    <div class="galeria_div">
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/usb01.png" alt="usb01">
+                            <div>
+                                <p>#01. El primer paso es descargarse la versión actual de Clonezilla, la cual podemos obtener en el siguiente enlace:</p>
+                                <code><a href="https://clonezilla.org/" target="_blank">Web oficial de Clonezilla</a></code>
+                                <p>Para la práctica descargaremos la versión stable 2.8.1 en su variante x86 y en formato ISO.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/usb03.png" alt="usb03">
+                            <div>
+                                <p>#02. También necesitaremos el programa Rufus o similar para crear el USB arrancable. Lo podemos descargar desde su web oficial:</p>
+                                <code><a href="https://clonezilla.org/" target="_blank">Web oficial de Rufus</a></code>
+                                <p>Descargaremos la versión portable.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/usb04.png" alt="usb04">
+                            <div>
+                                <p>#03. Intoduciomos un pendrive vacío en el ordenador y lo seleccionamos en la interfaz de Rufus.</p>
+                                <p>Selecionamos la imagen ISO de Clonezilla y escribimos un nombre de etiqueta para identificar el pendrive.</p>
+                                <p>Pulsamos en el botón «empezar»</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/usb05.png" alt="usb05">
+                            <div>
+                                <p>#04. La imagen de Clonezilla que hemos descargado puede ser escrita de dos modos distintos. Rufus nos recomienda utilizar el modo Imagen ISO, por lo que seleccionamos la opción «Escribir en modo Imagen ISO (Recomendado)» y le damos a «OK».</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/usb06.png" alt="usb06">
+                            <div>
+                                <p>#05. Ahora nos pregunta si le damos permiso al programa para conectarse a internet y descargar unos ficheros adicionales que necesita para completar el proceso. Pulsamos en «Sí».</p>
+                                <p>Por último, nos recordará que todos los datos contenidos en el pendrive serán borrados. Si estamos seguros de que no hay guardado nada importante, le damos a «Aceptar».</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/usb09.png" alt="usb09">
+                            <div>
+                                <p>#06. Una vez finalizado el proceso, le damos al botón «CERRAR» y ya tendremos listo un pendrive USB arrancable con Clonezilla.</p>
+                                <p>Podemos pasar a la siguiente sección «Configuración inicial».</p>
+                            </div>
+                        </div>
+                        <div class="siguiente">
+                        </div>
+                        <div class="previo">
+                        </div>
+                    </div>
+                </article>
+                <article id="pas_ini" class="ancla">
+                    <h2>Configuración inicial</h2>
+                    <p>Esta parte es común a las dos prácticas y consiste principalmente en arrancar el ordenador (del que queremos hacer/restaurar la imagen) desde el pendrive de Clonezilla.</p>
+                    <p>También se harán las primeras configuraciones como la selección del idioma y distribución de teclado. A continuación se detallan los pasos seguidos:</p>
+                    <div class="galeria_div">
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/01.jpg" alt="01">
+                            <div>
+                                <p>#08. Tras arrancar el ordenador desde la memoria USB aparecerá la pantalla de bienvenida de Clonezilla.</p> 
+                                <p>De las opciones que nos da, podemos escoger la primera o segunda, aunque la segunda es preferible ya que nos permite trabajar sin necesidad de tener el pendrive conectado.</p> 
+                                <p> </p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/03.jpg" alt="03">
+                            <div>
+                                <p>#09. Tras cargar el programa en la memoria RAM aparecerá el menú de selección de idioma. Elegimos el idioma con el que queramos trabajar, a ser posible el idioma del teclado de la máquina para facilitar el siguiente paso. En estas prácticas se han utilizado indistintamente los idiomas Español e Inglés. </p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/04.jpg" alt="04">
+                            <div>
+                                <p>#10. El siguiente paso es seleccionar la distribución de teclado. El sistema para cambiar la distrubución es bastante confuso, por lo que es mejor dejar la distribución por defecto, teniendo en cuenta que algunas teclas pueden cambiar de posición.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/05.jpg" alt="05">
+                            <div>
+                                <p>#11. Seleccionamos <i class="cita_tut">iniciar Clonezilla</i>. La otra opción es para iniciar el programa en línea de comandos, útil si se desea trabajar de forma desatendida.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/06.jpg" alt="06">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="siguiente">
+                        </div>
+                        <div class="previo">
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="local" class="ancla">
+                <h1>BackUp Local</h1>
+                <article id="loc_crear" class="ancla">
+                    <h2>Crear imagen</h2>
+                    <p>En la primera práctica crearemos una imagen de el disco interno de un portatil y lo guardaremos en un disco duro externo, conectado mediante USB al portátil.</p>
+                    <p>Para llegar hasta aquí, es necesario haber realizado los dos tutoriales de la sección «Primeros pasos».</p>
+                    <div class="galeria_div">
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/08.jpg" alt="08">
+                            <div>
+                                <p>#09. Tras cargar el programa en la memoria RAM aparecerá el menú de selección de idioma. Elegimos el idioma con el que queramos trabajar, a ser posible el idioma del teclado de la máquina para facilitar el siguiente paso. En estas prácticas se han utilizado indistintamente los idiomas Español e Inglés. </p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/09.jpg" alt="09">
+                            <div>
+                                <p>#10. El siguiente paso es seleccionar la distribución de teclado. El sistema para cambiar la distrubución es bastante confuso, por lo que es mejor dejar la distribución por defecto, teniendo en cuenta que algunas teclas pueden cambiar de posición.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/10.jpg" alt="10">
+                            <div>
+                                <p>#11. Seleccionamos <i class="cita_tut">iniciar Clonezilla</i>. La otra opción es para iniciar el programa en línea de comandos, útil si se desea trabajar de forma desatendida.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/11.jpg" alt="11">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/14.jpg" alt="14">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/15.jpg" alt="15">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/16.jpg" alt="16">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/17.jpg" alt="17">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/18.jpg" alt="18">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/19.jpg" alt="19">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/20.jpg" alt="20">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/21.jpg" alt="21">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/22.jpg" alt="22">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/23.jpg" alt="23">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/24.jpg" alt="24">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/25.jpg" alt="25">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/27.jpg" alt="27">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/30.jpg" alt="30">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/32.jpg" alt="32">
+                            <div>
+                                <p>#12. Seleccionamos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador. En el siguiente paso deberemos decidir si queremos crear/restaurar la copia desde un dispositivo local o desde un servidor remoto, continuando en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="siguiente">
+                        </div>
+                        <div class="previo">
+                        </div>
+                    </div>
+                </article>
+                <article id="loc_restaurar" class="ancla">
+                    <h2>Restaurar imagen</h2>
+                    <p>Test Disk se distruibuye en forma portable. Esto quiere decir que se puede usar sin necesidad de instalarlo. Si queremos tenerlo en el equipo como si fuera una versión instlada simplemente tenemos que descomprimir los ficheros en un lugar de nuestra elección (en mi caso he creado una carpeta «programas portables» en C:) y guardar un acceso directo al ejecutable en la siguiente ruta: </p>
+                    <code>C:\Users\[$USUARIO]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs</code>
+                    <p>De esta forma Windows lo añade ai índice del menú de inicio y permitiendo buscarlo desde allí.</p>
+                    <div class="galeria_div">
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/01.jpg" alt="01">
+                            <div>
+                                <p>hola mundo</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/02.jpg" alt="02">
+                            <div>
+                                <p>hola mundo</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/03.jpg" alt="03">
+                            <div>
+                                <p>hola mundo</p>
+                            </div>
+                        </div>
+                        <div class="siguiente">
+                        </div>
+                        <div class="previo">
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="remoto" class="ancla">
+                <h1>BackUp remoto</h1>
+                <article id="rem_crear" class="ancla">
+                    <h2>Crear imagen</h2>
+                    <p>Esta parte es común a las dos prácticas y </p>
+                    <p>A continución se puede ver un tutorial de todos los pasos que hay que realizar para hacer una imagen del disco del portatil en otro disco externo conectado por USB:</p>
+                    <div class="galeria_div">
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/01.jpg" alt="01">
+                            <div>
+                                <p>hola mundo</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/02.jpg" alt="02">
+                            <div>
+                                <p>hola mundo</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/03.jpg" alt="03">
+                            <div>
+                                <p>hola mundo</p>
+                            </div>
+                        </div>
+                        <div class="siguiente">
+                        </div>
+                        <div class="previo">
+                        </div>
+                    </div>
+                </article>
+                <article id="rem_restaurar" class="ancla">
+                    <h2>Restaurar imagen</h2>
+                    <p>Test Disk se distruibuye en forma portable. Esto quiere decir que se puede usar sin necesidad de instalarlo. Si queremos tenerlo en el equipo como si fuera una versión instlada simplemente tenemos que descomprimir los ficheros en un lugar de nuestra elección (en mi caso he creado una carpeta «programas portables» en C:) y guardar un acceso directo al ejecutable en la siguiente ruta: </p>
+                    <code>C:\Users\[$USUARIO]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs</code>
+                    <p>De esta forma Windows lo añade ai índice del menú de inicio y permitiendo buscarlo desde allí.</p>
+                    <div class="galeria_div">
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/01.jpg" alt="01">
+                            <div>
+                                <p>hola mundo</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/02.jpg" alt="02">
+                            <div>
+                                <p>hola mundo</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/recuperar/clonezilla/galeria/03.jpg" alt="03">
+                            <div>
+                                <p>hola mundo</p>
+                            </div>
+                        </div>
+                        <div class="siguiente">
+                        </div>
+                        <div class="previo">
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+</div>

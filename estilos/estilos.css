@@ -621,6 +621,81 @@ footer .columna a:hover {
 	cursor: pointer;
 }
 
+/* =========================================================
+------------------------------------------------------------
+::::::::::::: ESTILOS PARA GALERIA DE IMGSDIV ::::::::::::::
+------------------------------------------------------------
+============================================================ */
+
+.galeria_div {
+	position:relative;
+	width:100%;
+    margin: 2rem 0 0 0;
+    overflow: hidden;
+    width: calc(100% + 4rem);
+    margin: 1rem -2rem 1rem -2rem;
+}
+
+.galeria_div .slide:first-child {
+	position:relative;
+	width:100%;
+	left:0%;
+	top:0;
+}
+
+.galeria_div .slide {
+    margin: 0 !important;
+	position:absolute;
+    display: block;
+	width:100%;
+	left:-100%;
+	top:0;
+}
+
+.galeria_div .slide img {
+    margin: 0rem !important;
+}
+
+.galeria_div .slide div {
+    margin: 1rem 2rem 0rem 2rem;
+}
+
+.galeria_div .siguiente {
+	position:absolute;
+	top:0px;
+	left:60%;
+	width:40%;
+	opacity:20%;
+	z-index:19;	
+    background-image: url(../media/icons/arrow_r.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.galeria_div .siguiente:hover{
+	opacity:100%;
+	cursor: pointer;
+}
+
+.galeria_div .previo {
+	position:absolute;
+	top:0px;
+	left:0%;
+	width:40%;
+	opacity:20%;
+	z-index:19;
+    background-image: url(../media/icons/arrow_l.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
+
+.galeria_div .previo:hover {
+	opacity:100%;
+	cursor: pointer;
+}
+
 
 /* =========================================================
 ::::::::::::::: ESTILOS DE PAGINA RESPONSIVE :::::::::::::::

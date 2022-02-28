@@ -42,7 +42,13 @@ function cargar_contenido(seccion, pagina) {
         }
         if ( $(".galeria").length ) {
             console.log("hola")
+            $(".galeria").data("indice",0);
             galeria();
+        }
+        if ( $(".galeria_div").length ) {
+            console.log("hola_div")
+            $(".galeria_div").data("indice",0);
+            galeria_div();
         }
         $("video").on("mouseover", function(event) {
             this.play();
@@ -96,6 +102,9 @@ function redimensionar_ventana() {
     $(window).resize(function() {
         ajustar_altura_contenido();
         posicionar_menu_lateral(offset_header);
+        if ($('.galeria_div').length) {
+            galeria_div_ajustar_botones();
+        }
         // menu_lateral_arriba ();
         // MUY SUCIO -> ARREGLAR
         /*
