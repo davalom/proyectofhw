@@ -58,7 +58,8 @@ function galeria_div() {
 		i =  $(this).parent().data("indice") + 1;
 		//Si se ha llegado al final, reinicia el índice
 		if (i == $(this).parent().children('.slide').length) {
-			i=0;
+            i=i-1;
+			return;
 		}
 		//establece la imagen que va a salir y la que va a entrar
 		var currentImg = $(this).parent().children('.slide').eq(i);
@@ -70,9 +71,11 @@ function galeria_div() {
         //Si se ha llegado al principio, salta al final
         i = $(this).parent().data("indice");
 		if (i==0) {	
-			prevImg = $(this).parent().children('.slide').eq(0);
-			i=$(this).parent().children('.slide').length-1;
-			currentImg = $(this).parent().children('.slide').eq(i);
+            i=0;
+            return;
+			//prevImg = $(this).parent().children('.slide').eq(0);
+			//i=$(this).parent().children('.slide').length-1;
+			//currentImg = $(this).parent().children('.slide').eq(i);
 		}
 		else {
 			i=i-1;

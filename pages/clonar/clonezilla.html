@@ -1,0 +1,330 @@
+<div class="cont_ancho">
+    <div class="cont_centrado row">
+        <div class="col-L">
+            <aside id="nav3" class="lateral">
+                <ul>
+                    <li class="n1"><a href="#instalar_intro">Introducción</a></li>
+                </ul>
+                <ul>
+                    <li class="n1 raiz"><a href="#pasos">Primeros pasos</a></li>
+                    <li class="n2"><a href="#pas_usb">USB de arranque</a></li>
+                    <li class="n2"><a href="#pas_ini">Configuración inicial</a></li>
+                </ul>
+                <ul>
+                    <li class="n1 raiz"><a href="#local">Local</a></li>
+                    <li class="n2"><a href="#loc_crear">Crear</a></li>
+                    <li class="n2"><a href="#loc_restaurar">Restaurar</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div id="contenido" class="col-R">
+            <section id="instalar_intro" class="grid-item ancla">
+                <h1>Clonezilla local</h1>
+                <article>
+                    <img src="./media/img/clonar/clonezilla/clonezilla.png" class="top_articulo" alt="testdisk"/>
+                    <p>En esta práctica se creará una imagen de la información del software base de un equipo y posteriormente se realizará la restauración. Tanto la operación de creación de la imagen como la de restauración se hará de forma local.</p>
+                    <p>Para desarrollar la práctica vamos a necesitar:</p>                    
+                    <ul>
+                        <li>Un equipo con al menos un S.O. instalado.</li>
+                        <li>Un pendrive usb desde el que inciar el ordenador.</li>
+                        <li>Un disco duro externo para almacenar la imagen creada.</li>
+                        <li>El programa Clonezilla live para crear y restaurar la imagen.</li>
+                    </ul>
+                </article>
+            </section>
+            <section id="pasos" class="ancla">
+                <h1>Primeros pasos</h1>
+                <article id="pas_usb" class="ancla">
+                    <h2>Crear USB de arranque</h2>
+                    <p>Antes de empezar a utilizar Clonezilla tendremos que crear un medio arrancable desde el que ejecutar la aplicación. Utilizaremos un pendrive de 64GB como medio de arranque.</p>
+                    <p>A continución se detallan los pasos a seguir para crearlo:</p>
+                    <div class="galeria_div">
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/usb01.png" alt="usb01">
+                            <div>
+                                <p>#01. El primer paso es descargarse la versión actual de Clonezilla, la cual podemos obtener en el siguiente enlace:</p>
+                                <code><a href="https://clonezilla.org/" target="_blank">Web oficial de Clonezilla</a></code>
+                                <p>Para la práctica descargaremos la versión stable 2.8.1 en su variante x86 y en formato ISO.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/usb03.png" alt="usb03">
+                            <div>
+                                <p>#02. También necesitaremos el programa Rufus o similar para crear el USB arrancable. Lo podemos descargar desde su web oficial:</p>
+                                <code><a href="https://clonezilla.org/" target="_blank">Web oficial de Rufus</a></code>
+                                <p>Descargaremos la versión portable.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/usb04.png" alt="usb04">
+                            <div>
+                                <p>#03. Intoduciomos un pendrive vacío en el ordenador y lo seleccionamos en la interfaz de Rufus.</p>
+                                <p>Selecionamos la imagen ISO de Clonezilla y escribimos un nombre de etiqueta para identificar el pendrive.</p>
+                                <p>Pulsamos en el botón «empezar»</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/usb05.png" alt="usb05">
+                            <div>
+                                <p>#04. La imagen de Clonezilla que hemos descargado puede ser escrita de dos modos distintos. Rufus nos recomienda utilizar el modo Imagen ISO, por lo que seleccionamos la opción «Escribir en modo Imagen ISO (Recomendado)» y le damos a «OK».</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/usb06.png" alt="usb06">
+                            <div>
+                                <p>#05. Ahora nos pregunta si le damos permiso al programa para conectarse a internet y descargar unos ficheros adicionales que necesita para completar el proceso. Pulsamos en «Sí».</p>
+                                <p>Por último, nos recordará que todos los datos contenidos en el pendrive serán borrados. Si estamos seguros de que no hay guardado nada importante, le damos a «Aceptar».</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/usb09.png" alt="usb09">
+                            <div>
+                                <p>#06. Una vez finalizado el proceso, le damos al botón «CERRAR» y ya tendremos listo un pendrive USB arrancable con Clonezilla.</p>
+                                <p>Podemos pasar a la siguiente sección «Configuración inicial».</p>
+                            </div>
+                        </div>
+                        <div class="siguiente">
+                        </div>
+                        <div class="previo">
+                        </div>
+                    </div>
+                </article>
+                <article id="pas_ini" class="ancla">
+                    <h2>Configuración inicial</h2>
+                    <p>Esta parte consiste principalmente en arrancar el ordenador desde el pendrive de Clonezilla establecer las preferencias básicas como pueden ser el idioma, distribución de teclado y seleción del disco externo.</p>
+                    <div class="galeria_div">
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/01.jpg" alt="01">
+                            <div>
+                                <p>#01. Tras arrancar el ordenador desde la memoria USB, aparecerá la pantalla de bienvenida de Clonezilla.</p> 
+                                <p>De las opciones que nos da useremos la segunda, ya que permite desconectar el pendrive y utilizarlo en otros equipos.</p> 
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/03.jpg" alt="03">
+                            <div>
+                                <p>#02. Tras cargar el programa en la memoria RAM aparecerá el menú de selección de idioma. Elegimos el idioma con el que queramos trabajar, a ser posible el idioma del teclado de la máquina para facilitar el siguiente paso. En estas prácticas se han utilizado indistintamente los idiomas Español e Inglés. </p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/04.jpg" alt="04">
+                            <div>
+                                <p>#03. El siguiente paso es seleccionar la distribución de teclado. El sistema para cambiar la distrubución es bastante confuso, por lo que es mejor dejar la distribución por defecto, teniendo en cuenta que algunas teclas pueden cambiar de posición.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/05.jpg" alt="05">
+                            <div>
+                                <p>#04. Seleccionamos <i class="cita_tut">iniciar Clonezilla</i>. La otra opción es para iniciar el programa en línea de comandos, útil si se desea trabajar de forma desatendida.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/06.jpg" alt="06">
+                            <div>
+                                <p>#05. Escogemos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/08.jpg" alt="08">
+                            <div>
+                                <p>#06. Como lo que queremos es utilizar un disco duro externo para leer/guardar la imagen del disco, seleccionaremos «local_dev»</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/09.jpg" alt="09">
+                            <div>
+                                <p>#07. Nos mostrará una pantalla con los discos que detecta. Es ahora cuando conectaremos el disco externo y anotaremos su número de identificador. Cuando lo tengamos pulsamos Ctrl-C</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/10.jpg" alt="10">
+                            <div>
+                                <p>#08. Seleccionamos el disco externo y pulsamos «OK»</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/11.jpg" alt="11">
+                            <div>
+                                <p>#09. Para agilizar las cosas elegiremos la opción «no-sfck» que se salta la conmprobación del sistema de ficheros.</p>
+                                <p>A partir de aquí es cuando varían los pasos a seguir dependiendo de si estamos creando una imagen o restaurándola. El tutorial continúan en la sección correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="siguiente">
+                        </div>
+                        <div class="previo">
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="local" class="ancla">
+                <h1>BackUp Local</h1>
+                <article id="loc_crear" class="ancla">
+                    <h2>Crear imagen</h2>
+                    <p>En la primera práctica crearemos una imagen de el disco interno de un portatil y lo guardaremos en un disco duro externo conectado mediante USB al portátil.</p>
+                    <p>Para llegar hasta aquí, es necesario haber completado las instrucciones de la sección «Primeros pasos».</p>
+                    <div class="galeria_div">
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/14.jpg" alt="14">
+                            <div>
+                                <p>#01. Elegimos el directorio donde queremos guardar la imagen. Como lo queremos en la raíz del disco, simplemente de damos a «DONE».</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/15.jpg" alt="15">
+                            <div>
+                                <p>#02. Utilizaremos el modo Beginner/Principiante de Clonezilla, que deja muchas de las opciones en sus valores por defecto.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/16.jpg" alt="16">
+                            <div>
+                                <p>#03. Seleccionamos «savedisk» para crear la imagen del disco completo. </p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/17.jpg" alt="17">
+                            <div>
+                                <p>#04. Le damos un nombre a la imagen que estamos creando.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/18.jpg" alt="18">
+                            <div>
+                                <p>#05. Seleccionamos el disco que queremos clonar.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/19.jpg" alt="19">
+                            <div>
+                                <p>#06. En cuanto a la compresión podemos elegir cualquiera de las dos, en nuestro caso elegimos la primera.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/20.jpg" alt="20">
+                            <div>
+                                <p>#07. De nuevo, para agilizar las cosas elegimos la opción «no-sfck», aunque para una copia real sería conveniente hacer el chequeo.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/21.jpg" alt="21">
+                            <div>
+                                <p>#08. Ahora nos pregunta si queremos que verifique que la imagen ha sido realizada correctamente. Le decimos que sí.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/22.jpg" alt="22">
+                            <div>
+                                <p>#09. Para la práctica no encriptaremos la imagen. En un entorno real habría que valorar si es necesario o no.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/24.jpg" alt="24">
+                            <div>
+                                <p>#10. Ahora nos pregunta qué queremos que haga el programa al finalizar la copia. Le hemos pedido que nos vuelva a preguntar al acabar.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/25.jpg" alt="25">
+                            <div>
+                                <p>#11. En este paso nos pide que verifiquemos que la configuración es correcta y confirmemos si queremos continuar. Escribimos Y y pulsamos Enter para continuar.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/27.jpg" alt="27">
+                            <div>
+                                <p>#12. Ahora el programa nos muestra el progreso de la copia.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/32.jpg" alt="32">
+                            <div>
+                                <p>#13 Seleccionamos poweroff para apagar el equipo y terminar. La imagen del disco interno debería estar en el disco duro USB, lista para ser restaurada cuando se necesite.</p>
+                            </div>
+                        </div>
+                        <div class="siguiente">
+                        </div>
+                        <div class="previo">
+                        </div>
+                    </div>
+                </article>
+                <article id="loc_restaurar" class="ancla">
+                    <h2>Restaurar imagen</h2>
+                    <p>Esta segunda parte de la práctica consiste en restaurar la imágen que acabamos de crear. Para ello iniciaremos el equipo desde el pendrive de clonezilla y volveremos a seguir los pasos de la sección «Configuración inicial». Una vez hecho, continuamos el tutorial en esta sección.</p>
+                    <div class="galeria_div">
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/lr01.jpg" alt="">
+                            <div>
+                                <p>#01. Elegimos el directorio donde se encuentra guardada la imagen. Como la tenemos guardad en la raíz del disco, simplemente de damos a «DONE».</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/15.jpg" alt="">
+                            <div>
+                                <p>#02. Utilizaremos el modo Beginner/Principiante de Clonezilla, que deja muchas de las opciones en sus valores por defecto.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/lr02.jpg" alt="">
+                            <div>
+                                <p>#03. Selecionamos «restoredisk» para iniciar el asistenete de restauración de imágenes.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/lr03.jpg" alt="">
+                            <div>
+                                <p>#04. Seleccionamos la imagen que queremos restaurar. Como sólo hay una, le damos a aceptar.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/lr04.jpg" alt="">
+                            <div>
+                                <p>#05. Selecionamos el disco de destino donde se restaurará la imagen. En nustro caso sólo hay uno, pero en sistemas con varios discos hay que tener cuidado de selecionar el correcto.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/lr05.jpg" alt="">
+                            <div>
+                                <p>#06. Nos pregunta si queremos comprobar que la imagen está en buen estado antes de restaurarla. Le decimos que sí.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/24.jpg" alt="">
+                            <div>
+                                <p>#07. Nos pregunta qué queremos que haga al terminar la restauración. Selecionamos «reboot».</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/lr07.jpg" alt="">
+                            <div>
+                                <p>#08. Comienza el proceso de verificación de la imagen.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/lr08.jpg" alt="">
+                            <div>
+                                <p>#09. Una vez verificada no pedirá confirmación dos veces de si estamos seguros de que queremos restaurar la imagen. Escibimos Y y le damos a intro.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/lr09.jpg" alt="">
+                            <div>
+                                <p>#10. Comienza el proceso de restauración de la imagen.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezilla/galeria/33.jpg" alt="">
+                            <div>
+                                <p>#11. Una vez finalizado, el equipo se reinicia. Si todo ha salido bien cargará el sistema operativo tal como estaba en el momento que se hizo la imagen.</p>
+                            </div>
+                        </div>
+                        <div class="siguiente">
+                        </div>
+                        <div class="previo">
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+</div>
