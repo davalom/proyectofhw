@@ -416,5 +416,57 @@
 		</summary>
 		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=antivirus&amp;s2=eset"></link>
 	</entry>
+
+    <entry>
+		<id>https://davalom.github.io/proyectofhw/?s1=clonar&amp;s2=clonezilla</id>
+		<title>Clonezilla</title>
+		<updated>2022-03-18T18:46:00+01:00</updated>
+		<author>
+			<name>David AO</name>
+			<email>dao.asir@outlook.com</email>
+		</author>
+		<summary type="html">
+		<![CDATA[             
+            <img src="./media/img/clonar/clonezilla/clonezilla.png" class="top_articulo" alt="testdisk"/>
+            <p>En esta práctica se creará una imagen de la información del software base de un equipo y posteriormente se realizará la restauración. Tanto la operación de creación de la imagen como la de restauración se hará de forma local.</p>
+            <p>Para desarrollar la práctica vamos a necesitar:</p>                    
+            <ul>
+                <li>Un equipo con al menos un S.O. instalado.</li>
+                <li>Un pendrive usb desde el que inciar el ordenador.</li>
+                <li>Un disco duro externo para almacenar la imagen creada.</li>
+                <li>El programa Clonezilla live para crear y restaurar la imagen.</li>
+            </ul>
+            <p>Puede ver como hacer la práctica entrando en la web.</p> 
+        ]]>
+		</summary>
+		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=clonar&amp;s2=clonezilla"></link>
+	</entry>
+
+    <entry>
+		<id>https://davalom.github.io/proyectofhw/?s1=clonar&amp;s2=clonezillasmb</id>
+		<title>Clonezilla SMB</title>
+		<updated>2022-03-18T18:50:00+01:00</updated>
+		<author>
+			<name>David AO</name>
+			<email>dao.asir@outlook.com</email>
+		</author>
+		<summary type="html">
+		<![CDATA[             
+            <img src="./media/img/clonar/clonezillasmb/clonezilla.png" class="top_articulo" alt="testdisk"/>
+            <p>En esta práctica se creará una imagen de la información del software base de un equipo y posteriormente se realizará la restauración. Tanto la operación de creación de la imagen como la de restauración se hará en una ubicación compartida en otro equipo.</p>
+            <p>Para desarrollar la práctica vamos a necesitar:</p>                    
+            <ul>
+                <li>Un equipo con al menos un S.O. instalado.</li>
+                <li>Un pendrive usb desde el que inciar el ordenador.</li>
+                <li>Un equipo con Windows o Linux + Samba instalado.</li>
+                <li>El programa Clonezilla live para crear y restaurar la imagen.</li>
+            </ul>
+            <p>Puede ver como hacer la práctica entrando en la web.</p> 
+        ]]>
+		</summary>
+		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=clonar&amp;s2=clonezillasmb"></link>
+	</entry>
+
+    
 	
 </feed>
