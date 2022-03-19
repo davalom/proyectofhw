@@ -123,7 +123,7 @@
 			<pubDate>Tue, 01 Feb 2022 20:40:24 +0200</pubDate>
 		</item>
         <item>
-			<title>TestDisk</title>
+			<title>Clonezilla</title>
             <enclosure url="https://davalom.github.io/proyectofhw/media/img/clonar/clonezilla/clonezilla.png" length="315094" type="image/jpeg"/>
 			<description>En esta práctica se creará una imagen de la información del software base de un equipo y posteriormente se realizará la restauración. Tanto la operación de creación de la imagen como la de restauración se hará de forma local.</description>
 			<link>https://davalom.github.io/proyectofhw/?s1=clonar&amp;s2=clonezilla</link>
@@ -133,7 +133,7 @@
 			<pubDate>Sat, 19 Mar 2022 11:59:37 +0200</pubDate>
 		</item>
         <item>
-			<title>TestDisk</title>
+			<title>Clonezilla SMB</title>
             <enclosure url="https://davalom.github.io/proyectofhw/media/img/clonar/clonezillasmb/clonezilla.png" length="325123" type="image/jpeg"/>
 			<description>En esta práctica se creará una imagen de la información del software base de un equipo y posteriormente se realizará la restauración. Tanto la operación de creación de la imagen como la de restauración se hará en una ubicación compartida en otro equipo.</description>
 			<link>https://davalom.github.io/proyectofhw/?s1=clonar&amp;s2=clonezillasmb</link>
