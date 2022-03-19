@@ -11,57 +11,39 @@
                     <li class="n2"><a href="#pas_ini">Configuración inicial</a></li>
                 </ul>
                 <ul>
-                    <li class="n1 raiz"><a href="#local">Local</a></li>
-                    <li class="n2"><a href="#loc_crear">Crear</a></li>
+                    <li class="n1 raiz"><a href="#local">Server</a></li>
+                    <li class="n2"><a href="#loc_crear">Arrancar el servidor</a></li>
                     <li class="n2"><a href="#loc_restaurar">Restaurar</a></li>
                 </ul>
             </aside>
         </div>
         <div id="contenido" class="col-R">
             <section id="instalar_intro" class="grid-item ancla">
-                <h1>Clonezilla</h1>
+                <h1>Clonezilla Server</h1>
                 <article>
                     <img src="./media/img/clonar/clonezillasrv/clonezilla.png" class="top_articulo" alt="testdisk"/>
-                    <p>Clonezilla es un programa de creación/restauración de imágenes de particiones y discos completos. Es útil para desplegar sistemas de forma rápida en varios ordenadores y realizar copias de seguridad de sistemas completos.
-                    </p>
-                    <p>En estas prácticas vamos a usar Clonezilla live, la versión diseñada para crear imágenes de sistemas individuales</p>
-                    <p>Tiene licencia GNU GPLv2 (Open Source) aunque para su funcionamiento depende de más software (también Open Source) con otros tipos de licencia.</p>
-                    <p>A continuación se listan algunas de sus características principales:</p>
+                    <p>En esta práctica se iniciará un revidor de imágenes Clonezilla desde el que se restaurarán varios equipos de forma simultánea.</p>
+                    <p>Para desarrollar la práctica vamos a necesitar:</p>                    
                     <ul>
-                        <li>Soporte para gran cantidad de sistemas de archivos.</li>
-                        <li>Soporte para volúmenes virtuales LVM2 en sistemas Linux.</li>
-                        <li>Reinstalación del boot loader.</li>
-                        <li>Soporte para discos MBR y GPT.</li>
-                        <li>Modo desatendido.</li>
-                        <li>Soporte para restaurar varios dispositivos simultáneamente desde una única imagen.</li>
-                        <li>Soporte para encriptación de imágenes.</li>
-                        <li>Soporte para copias multicast y protocolo Bittorrent.</li>
-                        <li>Capacidad para restaurar desde dispositivo local, servidor ssh, samba NFS o WebDAV.</li>
+                        <li>Un pendrive usb con DRBL.</li>
+                        <li>Un equipo ejecutando clonezilla server que contenga las imágenes de disco.</li>
+                        <li>Uno o varios portátilos iguales que recibirán la imagen.</li>
                     </ul>
-                    <p>Los requisitos mínimos para su funcionamiento son:</p>
-                    <ul>
-                        <li>Procesador de 32 o 64 bits.</li>
-                        <li>196MB de memoria RAM.</li>
-                        <li>Dispositivo de arranque como lector de CD o puerto USB.</li>
-                        <li>Disco de destino con espacio suficiente para realizar la copia.</li>
-                    </ul>
-                    <p>Se puede descargar desde la web del desarrollador:</p>
-                    <a class="btn_descarga" href="https://clonezilla.org/" target="_blank">Clonezilla</a>
                 </article>
             </section>
             <section id="pasos" class="ancla">
                 <h1>Primeros pasos</h1>
                 <article id="pas_usb" class="ancla">
                     <h2>Crear USB de arranque</h2>
-                    <p>Antes de empezar a utilizar Clonezilla tendremos que crear un medio arrancable desde el que ejecutar la aplicación. Para ambas prácticas utilizaremos un pendrive de 64GB como pendrive de arranque, aunque se pueden utilizar otros medios como puede ser un CD o DVD.</p>
-                    <p>A continución se detallan los pasos a seguir para crearlo. Este procedimiento es idéntico tanto si queremos hacer una copia en un disco local como en un servidor remoto y sólo es necesario hacerlo una vez.</p>
+                    <p>Antes de empezar a utilizar Clonezilla server tendremos que crear un medio arrancable desde el que ejecutar la aplicación. Utilizaremos un pendrive de 64GB como medio de arranque.</p>
+                    <p>A continución se detallan los pasos a seguir para crearlo:</p>
                     <div class="galeria_div">
                         <div class="slide">
                             <img src="./media/img/clonar/clonezillasrv/galeria/usb01.png" alt="usb01">
                             <div>
-                                <p>#01. El primer paso es descargarse la versión actual de Clonezilla, la cual podemos obtener en el siguiente enlace:</p>
-                                <code><a href="https://clonezilla.org/" target="_blank">Web oficial de Clonezilla</a></code>
-                                <p>Para la práctica descargaremos la versión stable 2.8.1 en su variante x86 y en formato ISO.</p>
+                                <p>#01. El primer paso es descargarse la versión actual de DRBL, la cual podemos obtener en el siguiente enlace:</p>
+                                <code><a href="https://drbl.org/download/" target="_blank">Web oficial de DRBL</a></code>
+                                <p>Para la práctica descargaremos la versión stable 2.5.1-16 estable.</p>
                             </div>
                         </div>
                         <div class="slide">
@@ -76,7 +58,7 @@
                             <img src="./media/img/clonar/clonezillasrv/galeria/usb04.png" alt="usb04">
                             <div>
                                 <p>#03. Intoduciomos un pendrive vacío en el ordenador y lo seleccionamos en la interfaz de Rufus.</p>
-                                <p>Selecionamos la imagen ISO de Clonezilla y escribimos un nombre de etiqueta para identificar el pendrive.</p>
+                                <p>Selecionamos la imagen ISO de DRBL y escribimos un nombre de etiqueta para identificar el pendrive.</p>
                                 <p>Pulsamos en el botón «empezar»</p>
                             </div>
                         </div>
@@ -96,7 +78,7 @@
                         <div class="slide">
                             <img src="./media/img/clonar/clonezillasrv/galeria/usb09.png" alt="usb09">
                             <div>
-                                <p>#06. Una vez finalizado el proceso, le damos al botón «CERRAR» y ya tendremos listo un pendrive USB arrancable con Clonezilla.</p>
+                                <p>#06. Una vez finalizado el proceso, le damos al botón «CERRAR» y ya tendremos listo un pendrive USB arrancable con DRBL.</p>
                                 <p>Podemos pasar a la siguiente sección «Configuración inicial».</p>
                             </div>
                         </div>
@@ -108,63 +90,38 @@
                 </article>
                 <article id="pas_ini" class="ancla">
                     <h2>Configuración inicial</h2>
-                    <p>Esta parte es común a las dos prácticas y consiste principalmente en arrancar el ordenador desde el pendrive de Clonezilla establecer las preferencias básicas como pueden ser el idioma, distribución de teclado y seleción del disco externo.</p>
+                    <p>Esta parte consiste principalmente en arrancar el ordenador desde el pendrive de DRBL y establecer las preferencias básicas como pueden ser el idioma y distribución de teclado.</p>
                     <div class="galeria_div">
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/01.jpg" alt="01">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/pp01.jpg" alt="01">
                             <div>
-                                <p>#01. Tras arrancar el ordenador desde la memoria USB, aparecerá la pantalla de bienvenida de Clonezilla.</p> 
+                                <p>#01. Arrancamos el ordenador que hará de servidor desde la memoria USB. Aparecerá la pantalla de bienvenida de DRBL.</p> 
                                 <p>De las opciones que nos da useremos la segunda, ya que permite desconectar el pendrive y utilizarlo en otros equipos.</p> 
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/03.jpg" alt="03">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/pp02.jpg" alt="01">
                             <div>
-                                <p>#02. Tras cargar el programa en la memoria RAM aparecerá el menú de selección de idioma. Elegimos el idioma con el que queramos trabajar, a ser posible el idioma del teclado de la máquina para facilitar el siguiente paso. En estas prácticas se han utilizado indistintamente los idiomas Español e Inglés. </p>
+                                <p>#02. Tras cargar el programa en la memoria RAM aparecerá el menú de selección de idioma. Elegimos el idioma INGLES, ya que el ESPAÑOL nos dará problemas a la hora de seleccionar la ruta de las imágenes.</p> 
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/04.jpg" alt="04">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/pp03.jpg" alt="03">
                             <div>
                                 <p>#03. El siguiente paso es seleccionar la distribución de teclado. El sistema para cambiar la distrubución es bastante confuso, por lo que es mejor dejar la distribución por defecto, teniendo en cuenta que algunas teclas pueden cambiar de posición.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/05.jpg" alt="05">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/pp04.jpg" alt="04">
                             <div>
-                                <p>#04. Seleccionamos <i class="cita_tut">iniciar Clonezilla</i>. La otra opción es para iniciar el programa en línea de comandos, útil si se desea trabajar de forma desatendida.</p>
+                                <p>#04. Seleccionamos <i class="cita_tut">0</i> para arrancar DRBL en modo gráfico.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/06.jpg" alt="06">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/pp05.jpg" alt="05">
                             <div>
-                                <p>#05. Escogemos <i class="cita_tut">disposivo-imagen</i>, ya que en ambas prácticas queremos crear una imagen del disco interno del ordenador.</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/08.jpg" alt="08">
-                            <div>
-                                <p>#06. Como lo que queremos es utilizar un disco duro externo para leer/guardar la imagen del disco, seleccionaremos «local_dev»</p>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/09.jpg" alt="09">
-                            <div>
-                                <p>#07. Nos mostrará una pantalla con los discos que detecta. Es ahora cuando conectaremos el disco externo y anotaremos su número de identificador. Cuando lo tengamos pulsamos Ctrl-C</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/10.jpg" alt="10">
-                            <div>
-                                <p>#08. Seleccionamos el disco externo y pulsamos «OK»</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/11.jpg" alt="11">
-                            <div>
-                                <p>#09. Para agilizar las cosas elegiremos la opción «no-sfck» que se salta la conmprobación del sistema de ficheros.</p>
-                                <p>A partir de aquí es cuando varían los pasos a seguir dependiendo de si estamos creando una imagen o restaurándola. El tutorial continúan en la sección correspondiente.</p>
+                                <p>#05. Abrimos el programa Clonezilla Server.</p>
+                                <p>Contiuamos en la siguiente sección para configurar el servidor.</p>
                             </div>
                         </div>
                         <div class="siguiente">
@@ -175,88 +132,132 @@
                 </article>
             </section>
             <section id="local" class="ancla">
-                <h1>BackUp Local</h1>
+                <h1>Restauración desde servidor</h1>
                 <article id="loc_crear" class="ancla">
-                    <h2>Crear imagen</h2>
-                    <p>En la primera práctica crearemos una imagen de el disco interno de un portatil y lo guardaremos en un disco duro externo conectado mediante USB al portátil.</p>
-                    <p>Para llegar hasta aquí, es necesario haber realizado los dos tutoriales de la sección «Primeros pasos».</p>
+                    <h2>Arrancar el servidor</h2>
+                    <p>En esta parte iniciaremos un servidor de imágenes desde el cual poder restraurar varios equipos de forma simultánea.</p>
+                    <p>Para llegar hasta aquí, es necesario haber completado las instrucciones de la sección «Primeros pasos».</p>
                     <div class="galeria_div">
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/14.jpg" alt="14">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr01.jpg" alt="15">
                             <div>
-                                <p>#01. Elegimos el directorio donde queremos guardar la imagen. Como lo queremos en la raíz del sistema simplemente de damos a «DONE».</p>
+                                <p>#01. Al arrancar clonezilla server por primera vez nos dirá que no está configurado y necesita que le demos información.</p>
+                                <p>Pulsamos ENTER para continuar.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/15.jpg" alt="15">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr03.jpg" alt="16">
                             <div>
-                                <p>#02. Utilizaremos el modo Beginner/Principiante de Clonezilla, que deja muchas de las opciones en sus valores por defecto.</p>
+                                <p>#02. En este paso nos pregunta si queremos utilizar el servicio DHCP de la red o uno propio. Escribimos N y le damos a ENTER.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/16.jpg" alt="16">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr04.jpg" alt="17">
                             <div>
-                                <p>#03. Seleccionamos «savedisk» para crear la imagen del disco completo. </p>
+                                <p>#03. Ahora nos pregunta si queremos que el servicio DHCP asigne direcciones IP sólo a los clientes. Le decioms que sí escribiendo Y y pulsando ENTER.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/17.jpg" alt="17">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr05.jpg" alt="18">
                             <div>
-                                <p>#04. Le damos un nombre a la imagen que estamos creando.</p>
+                                <p>#04. Seleccionamos dónde están guardadas las imágenes. Como las tenemos en un dico externo USB, selecionamos LOCAL_DEV.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/18.jpg" alt="18">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr06.jpg" alt="19">
                             <div>
-                                <p>#05. Seleccionamos el disco que queremos clonar.</p>
+                                <p>#05. Pulsamos Enter y aparecerá una lista. Conectamos el disco USB al equipo.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/19.jpg" alt="19">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr07.jpg" alt="20">
                             <div>
-                                <p>#06. En cuanto a la compresión podemos elegir cualquiera de las dos, en nuestro caso elegimos la primera.</p>
+                                <p>#06. Apuntamos el identificador del disco que acabamos de conectar y pulsamos Ctrl-C para volver.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/20.jpg" alt="20">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr09.jpg" alt="21">
                             <div>
-                                <p>#07. De nuevo, para agilizar las cosas elegimos la opción «no-sfck», aunque para una copia real sería conveniente hacer el chequeo.</p>
+                                <p>#07. Seleccionamos el disco USB de las opciones que nos da.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/21.jpg" alt="21">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr12.jpg" alt="22">
                             <div>
-                                <p>#08. Ahora nos pregunta si queremos que verifique que la imagen ha sido realizada correctamente. Le decimos que sí.</p>
+                                <p>#08. Navegamos hasta el directorio donde se encuentran la imágenes y le damos a DONE.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/22.jpg" alt="22">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr13.jpg" alt="24">
                             <div>
-                                <p>#09. Para la práctica no encriptaremos la imagen. En un entorno real habría que valorar si es necesario o no.</p>
+                                <p>#09. El programa montará la carpeta y hará una serie de comprobaciones. Cuando termine pulsamos ENTER.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/24.jpg" alt="24">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr14.jpg" alt="25">
                             <div>
-                                <p>#10. Ahora nos pregunta qué queremos que haga el programa al finalizar la copia. Le hemos pedido que nos vuelva a preguntar al acabar.</p>
+                                <p>#10. Escogemos ALL y pulsamos ENTER. Para la otra opción habria que saber la IP o MAC de los equipos a restaurar, y con las pruebas que ha dado tiempo a hacer en clase no ha funcionado.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/25.jpg" alt="25">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr15.jpg" alt="27">
                             <div>
-                                <p>#11. En este paso nos pide que verifiquemos que la configuración es correcta y confirmemos si queremos continuar. Escribimos Y y pulsamos Enter para continuar.</p>
+                                <p>#11. Seleccionamos BEGGINER y pulsamos ENTER.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/27.jpg" alt="27">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr16.jpg" alt="32">
                             <div>
-                                <p>#12. Ahora el programa nos muestra el progreso de la copia.</p>
+                                <p>#12 Escogemos RESTORE-DISK para restaurar el dico completo de los clientes que se conectarán.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/32.jpg" alt="32">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr17.jpg" alt="32">
                             <div>
-                                <p>#13 Seleccionamos poweroff para apagar el equipo y terminar. La imagen del disco interno debería estar en el disco duro USB, lista para ser restaurada cuando se necesite.</p>
+                                <p>#13 Para ahorrar algo de tiempo, seleccionamos NO y pulsamos ENTER para saltarnos la verificación de la imagen.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr18.jpg" alt="32">
+                            <div>
+                                <p>#14 Decidimos qué queremos que haga el equipo cuando termine de restaurarse. Hemos seleccionado REBOOT.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr19.jpg" alt="32">
+                            <div>
+                                <p>#15 Seleccionamos la imagen a restaurar.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr20.jpg" alt="32">
+                            <div>
+                                <p>#16 Seleccionamos el disco duro donde se escribirá la imagen.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr21.jpg" alt="32">
+                            <div>
+                                <p>#17 Elegimos el modo de difusión de los datos de la imagen por la red. Hemos elegido MULTICAST.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr22.jpg" alt="32">
+                            <div>
+                                <p>#18 Elegimos la forma de decidir cuando empezar la transmisión. Elegimos CLIENTS-TO-WAIT para que comienze cuando se conecte un determinado númoero de clientes.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr23.jpg" alt="32">
+                            <div>
+                                <p>#19 Escribimos el número de equipos que queremos restaurar y pulamos ENTER.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/dr24.jpg" alt="32">
+                            <div>
+                                <p>#20 Nos muestra una advertencia y preguna si queremos continuar. Pulsamos ENTER para confirmar.</p>
+                                <p>Ahora continuamos en la siguiente sección ya en el portátil a restaurar.</p>
                             </div>
                         </div>
                         <div class="siguiente">
@@ -267,73 +268,44 @@
                 </article>
                 <article id="loc_restaurar" class="ancla">
                     <h2>Restaurar imagen</h2>
-                    <p>En la primera práctica crearemos una imagen de el disco interno de un portatil y lo guardaremos en un disco duro externo conectado mediante USB al portátil.</p>
-                    <p>Para llegar hasta aquí, es necesario haber realizado los dos tutoriales de la sección «Primeros pasos».</p>
+                    <p>Ahora es el momento de restaurar el equipo conectándonos al servidor de imágenes, que ya está a la espera. Para ello iniciaremos el equipo desde la tarjeta de red, pero primero hemos tenido que realizar los pasos de las secciones anteriores.</p>
                     <div class="galeria_div">
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/lr01.jpg" alt="">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/th01.jpg" alt="15">
                             <div>
-                                <p>#01. Elegimos el directorio donde queremos guardar la imagen. Como lo queremos en la raíz del sistema simplemente de damos a «DONE».</p>
+                                <p>#01. Arrancamos el ordenador a restaurar desde la tarjeta de red.</p>
+                                <p>Pulsamos ENTER para continuar.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/15.jpg" alt="">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/th02.jpg" alt="16">
                             <div>
-                                <p>#01. Elegimos el directorio donde queremos guardar la imagen. Como lo queremos en la raíz del sistema simplemente de damos a «DONE».</p>
+                                <p>#02. Aparecerá el menú de arranque de Clonezilla Server (DRBL). No tocamos nada.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/lr02.jpg" alt="">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/th03.jpg" alt="17">
                             <div>
-                                <p>#02. Utilizaremos el modo Beginner/Principiante de Clonezilla, que deja muchas de las opciones en sus valores por defecto.</p>
+                                <p>#03. Volvemos un momento al equipo servidor y pulsamos ENTER.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/lr03.jpg" alt="">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/th05.jpg" alt="18">
                             <div>
-                                <p>#03. Seleccionamos «savedisk» para crear la imagen del disco completo. </p>
+                                <p>#04. En el menú de arranque de DRBL del equipo a restaurar aparecerá una nueva opción. La seleccionamos y confirmamos con ENTER.
+                                </p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/lr04.jpg" alt="">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/th06.jpg" alt="19">
                             <div>
-                                <p>#04. Le damos un nombre a la imagen que estamos creando.</p>
+                                <p>#05. Ahora comenzará el proceso automático de restauración. Cuando termine se reinciará el equipo tal como se encontraba en el momento que se hizo la imagen.</p>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/lr05.jpg" alt="">
+                            <img src="./media/img/clonar/clonezillasrv/galeria/th07.jpg" alt="20">
                             <div>
-                                <p>#05. Seleccionamos el disco que queremos clonar.</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/24.jpg" alt="">
-                            <div>
-                                <p>#06. En cuanto a la compresión podemos elegir cualquiera de las dos, en nuestro caso elegimos la primera.</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/lr07.jpg" alt="">
-                            <div>
-                                <p>#07. De nuevo, para agilizar las cosas elegimos la opción «no-sfck», aunque para una copia real sería conveniente hacer el chequeo.</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/lr08.jpg" alt="">
-                            <div>
-                                <p>#08. Ahora nos pregunta si queremos que verifique que la imagen ha sido realizada correctamente. Le decimos que sí.</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/lr09.jpg" alt="">
-                            <div>
-                                <p>#09. Para la práctica no encriptaremos la imagen. En un entorno real habría que valorar si es necesario o no.</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="./media/img/clonar/clonezillasrv/galeria/33.jpg" alt="">
-                            <div>
-                                <p>#10. Ahora nos pregunta qué queremos que haga el programa al finalizar la copia. Le hemos pedido que nos vuelva a preguntar al acabar.</p>
+                                <p>#06. Por desgracia el proceso ha dado un error mientras se restauraba la imagen y no ha dado tiempo a averiguar cuál ha sido el problema.</p>
                             </div>
                         </div>
                         <div class="siguiente">
