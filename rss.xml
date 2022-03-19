@@ -142,5 +142,15 @@
 			<category>Clonar</category>
 			<pubDate>Sat, 19 Mar 2022 10:30:22 +0200</pubDate>
 		</item>
+        <item>
+			<title>Clonezilla Server</title>
+            <enclosure url="https://davalom.github.io/proyectofhw/media/img/clonar/clonezillasrv/clonezilla.png" length="315319" type="image/jpeg"/>
+			<description>En esta práctica se iniciará un revidor de imágenes Clonezilla desde el que se restaurarán varios equipos de forma simultánea.</description>
+			<link>https://davalom.github.io/proyectofhw/?s1=clonar&amp;s2=clonezillasrv</link>
+            <guid>https://davalom.github.io/proyectofhw/?s1=clonar&amp;s2=clonezillasrv</guid>
+			<author>dao.asir@outlook.com (David AO)</author>
+			<category>Clonar</category>
+			<pubDate>Sat, 19 Mar 2022 14:30:42 +0200</pubDate>
+		</item>
 	</channel>
 </rss>

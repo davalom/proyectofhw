@@ -467,6 +467,28 @@
 		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=clonar&amp;s2=clonezillasmb"></link>
 	</entry>
 
-    
+    <entry>
+		<id>https://davalom.github.io/proyectofhw/?s1=clonar&amp;s2=clonezillasrv</id>
+		<title>Clonezilla Server</title>
+		<updated>2022-03-19T12:50:00+01:00</updated>
+		<author>
+			<name>David AO</name>
+			<email>dao.asir@outlook.com</email>
+		</author>
+		<summary type="html">
+		<![CDATA[             
+            <img src="./media/img/clonar/clonezillasrv/clonezilla.png" class="top_articulo" alt="testdisk"/>
+            <p>En esta práctica se iniciará un revidor de imágenes Clonezilla desde el que se restaurarán varios equipos de forma simultánea.</p>
+            <p>Para desarrollar la práctica vamos a necesitar:</p>                    
+            <ul>
+                <li>Un pendrive usb con DRBL.</li>
+                <li>Un equipo ejecutando clonezilla server que contenga las imágenes de disco.</li>
+                <li>Uno o varios portátilos iguales que recibirán la imagen.</li>
+            </ul>
+            <p>Puede ver como hacer la práctica entrando en la web.</p> 
+        ]]>
+		</summary>
+		<link rel="alternate" href="https://davalom.github.io/proyectofhw/?s1=clonar&amp;s2=clonezillasrv"></link>
+	</entry>
 	
 </feed>
